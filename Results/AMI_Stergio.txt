@@ -1,0 +1,2471 @@
+PelvisAccelSensorX_mG_
+tau, first minimum in AMI: 12.0
+V_AMI: 0.4005185930826195
+
+---------------------------------------
+PelvisAccelSensorY_mG_
+tau, first minimum in AMI: 13.0
+V_AMI: 0.31449040903210845
+
+---------------------------------------
+PelvisAccelSensorZ_mG_
+tau, first minimum in AMI: 11.0
+V_AMI: 0.7336211677645248
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Pelvis_Acceleration_x_mG_
+tau, first minimum in AMI: 20.0
+V_AMI: 0.2179810486941622
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Pelvis_Acceleration_y_mG_
+tau, first minimum in AMI: 24.0
+V_AMI: 0.16995272705223638
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Pelvis_Acceleration_z_mG_
+tau, first minimum in AMI: 13.0
+V_AMI: 0.5673578197758802
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Pelvis_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 23.0
+V_AMI: 0.3954951856304874
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Pelvis_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 9.0
+V_AMI: 0.18034759223623692
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Pelvis_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 16.0
+V_AMI: 0.47929267914112056
+
+---------------------------------------
+
+PelvisCourse_deg_
+PelvisCourse_deg_
+PelvisCourse_deg_
+PelvisCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+PelvisPitch_deg_
+tau, first minimum in AMI: 25.0
+V_AMI: 0.21145372803116122
+
+---------------------------------------
+PelvisRoll_deg_
+tau, first minimum in AMI: 16.0
+V_AMI: 0.949648126420238
+
+---------------------------------------
+LTPelvicTilt_deg_
+tau, first minimum in AMI: 23.0
+V_AMI: 0.21175012438638458
+
+---------------------------------------
+LTPelvicObliquity_deg_
+tau, first minimum in AMI: 17.0
+V_AMI: 0.9305316934747283
+
+---------------------------------------
+LTPelvicRotation_deg_
+tau, first minimum in AMI: 26.0
+V_AMI: 0.8099770155828662
+
+---------------------------------------
+RTPelvicTilt_deg_
+tau, first minimum in AMI: 23.0
+V_AMI: 0.21175012438638458
+
+---------------------------------------
+RTPelvicObliquity_deg_
+tau, first minimum in AMI: 17.0
+V_AMI: 0.9304890750169715
+
+---------------------------------------
+RTPelvicRotation_deg_
+tau, first minimum in AMI: 26.0
+V_AMI: 0.8099741792753495
+
+---------------------------------------
+LowerSpineAccelSensorX_mG_
+tau, first minimum in AMI: 14.0
+V_AMI: 0.6813926975625462
+
+---------------------------------------
+LowerSpineAccelSensorY_mG_
+tau, first minimum in AMI: 14.0
+V_AMI: 0.254215684380786
+
+---------------------------------------
+LowerSpineAccelSensorZ_mG_
+tau, first minimum in AMI: 12.0
+V_AMI: 0.8387088119971978
+
+---------------------------------------
+NoraxonMyoMotion_Segments_LowerSpine_Acceleration_x_mG_
+tau, first minimum in AMI: 23.0
+V_AMI: 0.1722832260881822
+
+---------------------------------------
+NoraxonMyoMotion_Segments_LowerSpine_Acceleration_y_mG_
+tau, first minimum in AMI: 22.0
+V_AMI: 0.11657082550147405
+
+---------------------------------------
+NoraxonMyoMotion_Segments_LowerSpine_Acceleration_z_mG_
+tau, first minimum in AMI: 13.0
+V_AMI: 0.7067510015221217
+
+---------------------------------------
+NoraxonMyoMotion_Segments_LowerSpine_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 28.0
+V_AMI: 0.14315400517674282
+
+---------------------------------------
+NoraxonMyoMotion_Segments_LowerSpine_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 10.0
+V_AMI: 0.18308802815167338
+
+---------------------------------------
+NoraxonMyoMotion_Segments_LowerSpine_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 24.0
+V_AMI: 0.3712704840218476
+
+---------------------------------------
+LowerSpineCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+LowerSpinePitch_deg_
+tau, first minimum in AMI: 13.0
+V_AMI: 0.9965819844029543
+
+---------------------------------------
+LowerSpineRoll_deg_
+tau, first minimum in AMI: 15.0
+V_AMI: 0.9665447387072219
+
+---------------------------------------
+UpperSpineAccelSensorX_mG_
+tau, first minimum in AMI: 12.0
+V_AMI: 0.658165995392517
+
+---------------------------------------
+UpperSpineAccelSensorY_mG_
+tau, first minimum in AMI: 26.0
+V_AMI: 0.2909152775440473
+
+---------------------------------------
+UpperSpineAccelSensorZ_mG_
+tau, first minimum in AMI: 18.0
+V_AMI: 0.5536983060366152
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperSpine_Acceleration_x_mG_
+tau, first minimum in AMI: 21.0
+V_AMI: 0.20235683372954694
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperSpine_Acceleration_y_mG_
+tau, first minimum in AMI: 22.0
+V_AMI: 0.18273239364131483
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperSpine_Acceleration_z_mG_
+tau, first minimum in AMI: 17.0
+V_AMI: 0.7073705567228356
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperSpine_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 4.0
+V_AMI: 1.073787805804361
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperSpine_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 18.0
+V_AMI: 0.14690215803578177
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperSpine_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 28.0
+V_AMI: 0.20636863459151783
+
+---------------------------------------
+UpperSpineCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+UpperSpinePitch_deg_
+tau, first minimum in AMI: 12.0
+V_AMI: 1.077848456137571
+
+---------------------------------------
+UpperSpineRoll_deg_
+tau, first minimum in AMI: 15.0
+V_AMI: 1.0234861320776405
+
+---------------------------------------
+HeadAccelSensorX_mG_
+tau, first minimum in AMI: 15.0
+V_AMI: 0.8406525104390664
+
+---------------------------------------
+HeadAccelSensorY_mG_
+tau, first minimum in AMI: 28.0
+V_AMI: 0.4540161680862679
+
+---------------------------------------
+HeadAccelSensorZ_mG_
+tau, first minimum in AMI: 33.0
+V_AMI: 0.2369892622453183
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Head_Acceleration_x_mG_
+tau, first minimum in AMI: 6.0
+V_AMI: 0.9791219522710005
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Head_Acceleration_y_mG_
+tau, first minimum in AMI: 6.0
+V_AMI: 1.0419290914371553
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Head_Acceleration_z_mG_
+tau, first minimum in AMI: 15.0
+V_AMI: 0.8406577299410247
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Head_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 22.0
+V_AMI: 0.25248516729025516
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Head_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 15.0
+V_AMI: 0.22736340642531436
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Head_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 20.0
+V_AMI: 0.1576396161623691
+
+---------------------------------------
+HeadCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+HeadPitch_deg_
+tau, first minimum in AMI: 26.0
+V_AMI: 1.064236853614229
+
+---------------------------------------
+HeadRoll_deg_
+tau, first minimum in AMI: 32.0
+V_AMI: 1.0676223510661345
+
+---------------------------------------
+LTUpperArmAccelSensorX_mG_
+tau, first minimum in AMI: 13.0
+V_AMI: 0.7686606096941626
+
+---------------------------------------
+LTUpperArmAccelSensorY_mG_
+tau, first minimum in AMI: 17.0
+V_AMI: 0.17570497764237797
+
+---------------------------------------
+LTUpperArmAccelSensorZ_mG_
+tau, first minimum in AMI: 21.0
+V_AMI: 0.13688224870977414
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmLT_Acceleration_x_mG_
+tau, first minimum in AMI: 6.0
+V_AMI: 1.0778428823030004
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmLT_Acceleration_y_mG_
+tau, first minimum in AMI: 31.0
+V_AMI: 0.13572802169526313
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmLT_Acceleration_z_mG_
+tau, first minimum in AMI: 14.0
+V_AMI: 0.7681209323358547
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmLT_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 20.0
+V_AMI: 0.668361313276995
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmLT_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 8.0
+V_AMI: 1.0655358219537692
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmLT_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 17.0
+V_AMI: 1.001421985082164
+
+---------------------------------------
+LTUpperArmCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+LTUpperArmPitch_deg_
+tau, first minimum in AMI: 30.0
+V_AMI: 1.0183649454623795
+
+---------------------------------------
+LTUpperArmRoll_deg_
+tau, first minimum in AMI: 25.0
+V_AMI: 1.039456931599802
+
+---------------------------------------
+LTForearmAccelSensorX_mG_
+tau, first minimum in AMI: 28.0
+V_AMI: 0.26810648090151745
+
+---------------------------------------
+LTForearmAccelSensorY_mG_
+tau, first minimum in AMI: 18.0
+V_AMI: 0.2022980481944218
+
+---------------------------------------
+LTForearmAccelSensorZ_mG_
+tau, first minimum in AMI: 29.0
+V_AMI: 0.3370025094862449
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmLT_Acceleration_x_mG_
+tau, first minimum in AMI: 14.0
+V_AMI: 1.0306411049450785
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmLT_Acceleration_y_mG_
+tau, first minimum in AMI: 12.0
+V_AMI: 1.0392310184962803
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmLT_Acceleration_z_mG_
+tau, first minimum in AMI: 30.0
+V_AMI: 0.2859130930740793
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmLT_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 25.0
+V_AMI: 0.21928761027198
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmLT_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 17.0
+V_AMI: 1.0447779837605822
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmLT_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 19.0
+V_AMI: 0.9528332020625878
+
+---------------------------------------
+LTForearmCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+LTForearmPitch_deg_
+tau, first minimum in AMI: 24.0
+V_AMI: 1.0363563322291547
+
+---------------------------------------
+LTForearmRoll_deg_
+tau, first minimum in AMI: 34.0
+V_AMI: 1.0155724457087094
+
+---------------------------------------
+LTHandAccelSensorX_mG_
+tau, first minimum in AMI: 10.0
+V_AMI: 1.003300857815946
+
+---------------------------------------
+LTHandAccelSensorY_mG_
+tau, first minimum in AMI: 32.0
+V_AMI: 0.18344152473958286
+
+---------------------------------------
+LTHandAccelSensorZ_mG_
+tau, first minimum in AMI: 24.0
+V_AMI: 0.44725342632708537
+
+---------------------------------------
+NoraxonMyoMotion_Segments_HandLT_Acceleration_x_mG_
+tau, first minimum in AMI: 14.0
+V_AMI: 1.057366500475428
+
+---------------------------------------
+NoraxonMyoMotion_Segments_HandLT_Acceleration_y_mG_
+tau, first minimum in AMI: 14.0
+V_AMI: 1.0682412562750598
+
+---------------------------------------
+NoraxonMyoMotion_Segments_HandLT_Acceleration_z_mG_
+tau, first minimum in AMI: 30.0
+V_AMI: 0.33495094393944447
+
+---------------------------------------
+NoraxonMyoMotion_Segments_HandLT_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 21.0
+V_AMI: 0.15320033940545633
+
+---------------------------------------
+NoraxonMyoMotion_Segments_HandLT_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 23.0
+V_AMI: 0.44478565559768585
+
+---------------------------------------
+NoraxonMyoMotion_Segments_HandLT_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 16.0
+V_AMI: 0.9968819961564347
+
+---------------------------------------
+LTHandCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+LTHandPitch_deg_
+tau, first minimum in AMI: 21.0
+V_AMI: 1.0449375156471776
+
+---------------------------------------
+LTHandRoll_deg_
+tau, first minimum in AMI: 29.0
+V_AMI: 1.0300492557127905
+
+---------------------------------------
+LTThighAccelSensorX_mG_
+tau, first minimum in AMI: 19.0
+V_AMI: 0.7018403358855902
+
+---------------------------------------
+LTThighAccelSensorY_mG_
+tau, first minimum in AMI: 9.0
+V_AMI: 0.3129344247248642
+
+---------------------------------------
+LTThighAccelSensorZ_mG_
+tau, first minimum in AMI: 12.0
+V_AMI: 0.5781683136264055
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighLT_Acceleration_x_mG_
+tau, first minimum in AMI: 29.0
+V_AMI: 0.2328430779061963
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighLT_Acceleration_y_mG_
+tau, first minimum in AMI: 16.0
+V_AMI: 0.18415803731712688
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighLT_Acceleration_z_mG_
+tau, first minimum in AMI: 7.0
+V_AMI: 0.9724778874791136
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighLT_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 18.0
+V_AMI: 0.3754659949234081
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighLT_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 21.0
+V_AMI: 1.337257410741291
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighLT_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 17.0
+V_AMI: 0.48621685192611874
+
+---------------------------------------
+LTThighCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+LTThighPitch_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+LTThighRoll_deg_
+tau, first minimum in AMI: 12.0
+V_AMI: 1.0416586861516741
+
+---------------------------------------
+LTShankAccelSensorX_mG_
+tau, first minimum in AMI: 15.0
+V_AMI: 0.7578517267319138
+
+---------------------------------------
+LTShankAccelSensorY_mG_
+tau, first minimum in AMI: 10.0
+V_AMI: 0.5563003769565372
+
+---------------------------------------
+LTShankAccelSensorZ_mG_
+tau, first minimum in AMI: 6.0
+V_AMI: 1.0156263140849588
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankLT_Acceleration_x_mG_
+tau, first minimum in AMI: 31.0
+V_AMI: 0.2723104170014996
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankLT_Acceleration_y_mG_
+tau, first minimum in AMI: 32.0
+V_AMI: 0.21943615806810693
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankLT_Acceleration_z_mG_
+tau, first minimum in AMI: 15.0
+V_AMI: 0.48902741573561725
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankLT_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 11.0
+V_AMI: 0.3925637375646561
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankLT_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 13.0
+V_AMI: 1.6544270201339477
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankLT_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 15.0
+V_AMI: 0.9081332776169339
+
+---------------------------------------
+LTShankCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+LTShankPitch_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+LTShankRoll_deg_
+tau, first minimum in AMI: 23.0
+V_AMI: 0.9456799231786494
+
+---------------------------------------
+LTFootAccelSensorX_mG_
+tau, first minimum in AMI: 16.0
+V_AMI: 0.8648063978837608
+
+---------------------------------------
+LTFootAccelSensorY_mG_
+tau, first minimum in AMI: 28.0
+V_AMI: 0.3949838412728638
+
+---------------------------------------
+LTFootAccelSensorZ_mG_
+tau, first minimum in AMI: 21.0
+V_AMI: 0.7189909914947663
+
+---------------------------------------
+NoraxonMyoMotion_Segments_FootLT_Acceleration_x_mG_
+tau, first minimum in AMI: 29.0
+V_AMI: 0.6004812057434724
+
+---------------------------------------
+NoraxonMyoMotion_Segments_FootLT_Acceleration_y_mG_
+tau, first minimum in AMI: 8.0
+V_AMI: 0.8618650005984638
+
+---------------------------------------
+NoraxonMyoMotion_Segments_FootLT_Acceleration_z_mG_
+tau, first minimum in AMI: 15.0
+V_AMI: 0.9529789863128475
+
+---------------------------------------
+NoraxonMyoMotion_Segments_FootLT_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 12.0
+V_AMI: 0.6807946270482947
+
+---------------------------------------
+NoraxonMyoMotion_Segments_FootLT_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+NoraxonMyoMotion_Segments_FootLT_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 16.0
+V_AMI: 1.034506168583604
+
+---------------------------------------
+LTContact
+tau, first minimum in AMI: 26.0
+V_AMI: 0.17997701352194642
+
+---------------------------------------
+LTFootCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+LTFootPitch_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+LTFootRoll_deg_
+tau, first minimum in AMI: 16.0
+V_AMI: 0.8787033451252999
+
+---------------------------------------
+LTFootPitchDown_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+LTFootRollMed_deg_
+tau, first minimum in AMI: 21.0
+V_AMI: 0.898191648486875
+
+---------------------------------------
+LTFootRotationExt_deg_
+tau, first minimum in AMI: 21.0
+V_AMI: 0.927517353298909
+
+---------------------------------------
+RTUpperArmAccelSensorX_mG_
+tau, first minimum in AMI: 14.0
+V_AMI: 0.762712985733382
+
+---------------------------------------
+RTUpperArmAccelSensorY_mG_
+tau, first minimum in AMI: 18.0
+V_AMI: 0.27267614616069713
+
+---------------------------------------
+RTUpperArmAccelSensorZ_mG_
+tau, first minimum in AMI: 23.0
+V_AMI: 0.2608480279510934
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmRT_Acceleration_x_mG_
+tau, first minimum in AMI: 7.0
+V_AMI: 1.0082586772362157
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmRT_Acceleration_y_mG_
+tau, first minimum in AMI: 6.0
+V_AMI: 0.9441177938396866
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmRT_Acceleration_z_mG_
+tau, first minimum in AMI: 13.0
+V_AMI: 0.8064237035001776
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmRT_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 21.0
+V_AMI: 0.45983596251114467
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmRT_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 25.0
+V_AMI: 0.9867572800815538
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmRT_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 27.0
+V_AMI: 0.4774413111160179
+
+---------------------------------------
+RTUpperArmCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+RTUpperArmPitch_deg_
+tau, first minimum in AMI: 30.0
+V_AMI: 1.0292756244057744
+
+---------------------------------------
+RTUpperArmRoll_deg_
+tau, first minimum in AMI: 19.0
+V_AMI: 1.0058616350472969
+
+---------------------------------------
+RTForearmAccelSensorX_mG_
+tau, first minimum in AMI: 24.0
+V_AMI: 0.28336420554079556
+
+---------------------------------------
+RTForearmAccelSensorY_mG_
+tau, first minimum in AMI: 17.0
+V_AMI: 0.11436354148676048
+
+---------------------------------------
+RTForearmAccelSensorZ_mG_
+tau, first minimum in AMI: 31.0
+V_AMI: 0.2260846334868541
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmRT_Acceleration_x_mG_
+tau, first minimum in AMI: 13.0
+V_AMI: 1.0728952630663917
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmRT_Acceleration_y_mG_
+tau, first minimum in AMI: 12.0
+V_AMI: 1.023789478771096
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmRT_Acceleration_z_mG_
+tau, first minimum in AMI: 25.0
+V_AMI: 0.29093680229655977
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmRT_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 20.0
+V_AMI: 0.21751597182351964
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmRT_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 22.0
+V_AMI: 1.0136734449635292
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmRT_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 19.0
+V_AMI: 0.964394791974968
+
+---------------------------------------
+RTForearmCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+RTForearmPitch_deg_
+tau, first minimum in AMI: 24.0
+V_AMI: 1.040677949162116
+
+---------------------------------------
+RTForearmRoll_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+RTHandAccelSensorX_mG_
+tau, first minimum in AMI: 31.0
+V_AMI: 0.32771473864226774
+
+---------------------------------------
+RTHandAccelSensorY_mG_
+tau, first minimum in AMI: 31.0
+V_AMI: 0.14402938647026553
+
+---------------------------------------
+RTHandAccelSensorZ_mG_
+tau, first minimum in AMI: 32.0
+V_AMI: 0.33022900172638825
+
+---------------------------------------
+NoraxonMyoMotion_Segments_HandRT_Acceleration_x_mG_
+tau, first minimum in AMI: 16.0
+V_AMI: 1.0547698119285835
+
+---------------------------------------
+NoraxonMyoMotion_Segments_HandRT_Acceleration_y_mG_
+tau, first minimum in AMI: 14.0
+V_AMI: 1.009246787209638
+
+---------------------------------------
+NoraxonMyoMotion_Segments_HandRT_Acceleration_z_mG_
+tau, first minimum in AMI: 26.0
+V_AMI: 0.2540379644340839
+
+---------------------------------------
+NoraxonMyoMotion_Segments_HandRT_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 18.0
+V_AMI: 0.11564312758203342
+
+---------------------------------------
+NoraxonMyoMotion_Segments_HandRT_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 25.0
+V_AMI: 0.5701531097945429
+
+---------------------------------------
+NoraxonMyoMotion_Segments_HandRT_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 14.0
+V_AMI: 1.0127514955510288
+
+---------------------------------------
+RTHandCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+RTHandPitch_deg_
+tau, first minimum in AMI: 21.0
+V_AMI: 1.0347848859480742
+
+---------------------------------------
+RTHandRoll_deg_
+tau, first minimum in AMI: 31.0
+V_AMI: 1.0533032956792638
+
+---------------------------------------
+RTThighAccelSensorX_mG_
+tau, first minimum in AMI: 8.0
+V_AMI: 0.8552557029155768
+
+---------------------------------------
+RTThighAccelSensorY_mG_
+tau, first minimum in AMI: 8.0
+V_AMI: 0.34713087278222104
+
+---------------------------------------
+RTThighAccelSensorZ_mG_
+tau, first minimum in AMI: 12.0
+V_AMI: 0.4796021039545723
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighRT_Acceleration_x_mG_
+tau, first minimum in AMI: 26.0
+V_AMI: 0.20425749351297218
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighRT_Acceleration_y_mG_
+tau, first minimum in AMI: 15.0
+V_AMI: 0.1684019143464781
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighRT_Acceleration_z_mG_
+tau, first minimum in AMI: 8.0
+V_AMI: 0.8827992473194246
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighRT_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 21.0
+V_AMI: 0.29045260490459085
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighRT_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 20.0
+V_AMI: 1.0508003602547147
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighRT_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 11.0
+V_AMI: 0.6423426164146561
+
+---------------------------------------
+RTThighCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+RTThighPitch_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+RTThighRoll_deg_
+tau, first minimum in AMI: 11.0
+V_AMI: 0.9879959244888676
+
+---------------------------------------
+RTShankAccelSensorX_mG_
+tau, first minimum in AMI: 9.0
+V_AMI: 1.0861483665594724
+
+---------------------------------------
+RTShankAccelSensorY_mG_
+tau, first minimum in AMI: 10.0
+V_AMI: 0.3492148748062752
+
+---------------------------------------
+RTShankAccelSensorZ_mG_
+tau, first minimum in AMI: 10.0
+V_AMI: 0.9399248083039873
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankRT_Acceleration_x_mG_
+tau, first minimum in AMI: 28.0
+V_AMI: 0.25320907122820113
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankRT_Acceleration_y_mG_
+tau, first minimum in AMI: 28.0
+V_AMI: 0.17195511384717074
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankRT_Acceleration_z_mG_
+tau, first minimum in AMI: 9.0
+V_AMI: 0.7207456413626926
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankRT_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 11.0
+V_AMI: 0.322363736747008
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankRT_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 28.0
+V_AMI: 1.3959436245229755
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankRT_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 15.0
+V_AMI: 0.9353310947794964
+
+---------------------------------------
+RTShankCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+RTShankPitch_deg_
+tau, first minimum in AMI: 6.0
+V_AMI: 3.4324312446727365
+
+---------------------------------------
+RTShankRoll_deg_
+tau, first minimum in AMI: 29.0
+V_AMI: 0.8838561018009261
+
+---------------------------------------
+RTFootAccelSensorX_mG_
+tau, first minimum in AMI: 20.0
+V_AMI: 0.8337949149130793
+
+---------------------------------------
+RTFootAccelSensorY_mG_
+tau, first minimum in AMI: 32.0
+V_AMI: 0.3489185976349627
+
+---------------------------------------
+RTFootAccelSensorZ_mG_
+tau, first minimum in AMI: 16.0
+V_AMI: 0.8553782003388322
+
+---------------------------------------
+NoraxonMyoMotion_Segments_FootRT_Acceleration_x_mG_
+tau, first minimum in AMI: 13.0
+V_AMI: 0.9259304402057973
+
+---------------------------------------
+NoraxonMyoMotion_Segments_FootRT_Acceleration_y_mG_
+tau, first minimum in AMI: 25.0
+V_AMI: 0.4240097762191209
+
+---------------------------------------
+NoraxonMyoMotion_Segments_FootRT_Acceleration_z_mG_
+tau, first minimum in AMI: 15.0
+V_AMI: 1.0705098201452645
+
+---------------------------------------
+NoraxonMyoMotion_Segments_FootRT_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 15.0
+V_AMI: 0.6816954494188227
+
+---------------------------------------
+NoraxonMyoMotion_Segments_FootRT_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 24.0
+V_AMI: 1.2228354989006518
+
+---------------------------------------
+NoraxonMyoMotion_Segments_FootRT_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 17.0
+V_AMI: 1.2236676045603507
+
+---------------------------------------
+RTContact
+tau, first minimum in AMI: 26.0
+V_AMI: 0.18249110686047768
+
+---------------------------------------
+RTFootCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+RTFootPitch_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+RTFootRoll_deg_
+tau, first minimum in AMI: 34.0
+V_AMI: 0.6711706121531599
+
+---------------------------------------
+RTFootPitchDown_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+RTFootRollMed_deg_
+tau, first minimum in AMI: 19.0
+V_AMI: 0.8277451117627523
+
+---------------------------------------
+RTFootRotationExt_deg_
+tau, first minimum in AMI: 21.0
+V_AMI: 0.9723901707842668
+
+---------------------------------------
+LumbarAxial_RT_deg_
+tau, first minimum in AMI: 31.0
+V_AMI: 0.7384925485431388
+
+---------------------------------------
+LumbarFlexion_deg_
+tau, first minimum in AMI: 32.0
+V_AMI: 0.202222255989803
+
+---------------------------------------
+LumbarLateral_RT_deg_
+tau, first minimum in AMI: 16.0
+V_AMI: 0.9280398935609959
+
+---------------------------------------
+ThoracicAxial_RT_deg_
+tau, first minimum in AMI: 24.0
+V_AMI: 1.0479761287575466
+
+---------------------------------------
+ThoracicFlexion_deg_
+tau, first minimum in AMI: 12.0
+V_AMI: 1.074567754095175
+
+---------------------------------------
+ThoracicLateral_RT_deg_
+tau, first minimum in AMI: 15.0
+V_AMI: 1.0450708418938373
+
+---------------------------------------
+CervicalAxial_RT_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+CervicalFlexion_deg_
+tau, first minimum in AMI: 19.0
+V_AMI: 1.0266690663295341
+
+---------------------------------------
+CervicalLateral_RT_deg_
+tau, first minimum in AMI: 16.0
+V_AMI: 1.0426689758224028
+
+---------------------------------------
+LTShoulderTotalFlexion_deg_
+tau, first minimum in AMI: 15.0
+V_AMI: 0.9849476069398008
+
+---------------------------------------
+LTShoulderRotationExt_deg_
+tau, first minimum in AMI: 25.0
+V_AMI: 1.0475403493602617
+
+---------------------------------------
+LTShoulderFlexion_deg_
+tau, first minimum in AMI: 32.0
+V_AMI: 0.9998000590588494
+
+---------------------------------------
+LTShoulderAbduction_deg_
+tau, first minimum in AMI: 18.0
+V_AMI: 1.0223874617168551
+
+---------------------------------------
+LTElbowFlexion_deg_
+tau, first minimum in AMI: 20.0
+V_AMI: 1.0393630691019973
+
+---------------------------------------
+LTWristExtension_deg_
+tau, first minimum in AMI: 17.0
+V_AMI: 1.0146492241889047
+
+---------------------------------------
+LTWristRadial_deg_
+tau, first minimum in AMI: 25.0
+V_AMI: 0.3553661792559124
+
+---------------------------------------
+LTWristSupination_deg_
+tau, first minimum in AMI: 18.0
+V_AMI: 1.029858216084413
+
+---------------------------------------
+LTHipFlexion_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+LTHipAbduction_deg_
+tau, first minimum in AMI: 24.0
+V_AMI: 0.9394888067504487
+
+---------------------------------------
+LTHipRotationExt_deg_
+tau, first minimum in AMI: 14.0
+V_AMI: 1.0105028331688544
+
+---------------------------------------
+LTKneeAbduction_deg_
+tau, first minimum in AMI: 22.0
+V_AMI: 0.3665806177124276
+
+---------------------------------------
+LTKneeRotationExt_deg_
+tau, first minimum in AMI: 14.0
+V_AMI: 1.0092755922672993
+
+---------------------------------------
+LTKneeFlexion_deg_
+tau, first minimum in AMI: 31.0
+V_AMI: 1.2054333895819411
+
+---------------------------------------
+LTAnkleDorsiflexion_deg_
+tau, first minimum in AMI: 29.0
+V_AMI: 0.9737489211817087
+
+---------------------------------------
+LTAnkleAbduction_deg_
+tau, first minimum in AMI: 21.0
+V_AMI: 1.158975917365333
+
+---------------------------------------
+LTAnkleInversion_deg_
+tau, first minimum in AMI: 20.0
+V_AMI: 1.042817710720532
+
+---------------------------------------
+RTShoulderTotalFlexion_deg_
+tau, first minimum in AMI: 33.0
+V_AMI: 0.2813078391149446
+
+---------------------------------------
+RTShoulderRotationExt_deg_
+tau, first minimum in AMI: 23.0
+V_AMI: 1.0395895214431068
+
+---------------------------------------
+RTShoulderFlexion_deg_
+tau, first minimum in AMI: 32.0
+V_AMI: 1.0122198904643598
+
+---------------------------------------
+RTShoulderAbduction_deg_
+tau, first minimum in AMI: 12.0
+V_AMI: 1.023150118266697
+
+---------------------------------------
+RTElbowFlexion_deg_
+tau, first minimum in AMI: 25.0
+V_AMI: 1.0194252164285813
+
+---------------------------------------
+RTWristExtension_deg_
+tau, first minimum in AMI: 19.0
+V_AMI: 1.0599718117236665
+
+---------------------------------------
+RTWristRadial_deg_
+tau, first minimum in AMI: 18.0
+V_AMI: 1.0300249091064526
+
+---------------------------------------
+RTWristSupination_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+RTHipFlexion_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+RTHipAbduction_deg_
+tau, first minimum in AMI: 30.0
+V_AMI: 1.1657667613666363
+
+---------------------------------------
+RTHipRotationExt_deg_
+tau, first minimum in AMI: 16.0
+V_AMI: 1.011773231755725
+
+---------------------------------------
+RTKneeAbduction_deg_
+tau, first minimum in AMI: 23.0
+V_AMI: 0.9683808691419864
+
+---------------------------------------
+RTKneeRotationExt_deg_
+tau, first minimum in AMI: 21.0
+V_AMI: 1.1296916925977216
+
+---------------------------------------
+RTKneeFlexion_deg_
+tau, first minimum in AMI: 30.0
+V_AMI: 1.3656385280507177
+
+---------------------------------------
+RTAnkleDorsiflexion_deg_
+tau, first minimum in AMI: 32.0
+V_AMI: 0.9829228219576956
+
+---------------------------------------
+RTAnkleAbduction_deg_
+tau, first minimum in AMI: 14.0
+V_AMI: 1.0415145719266947
+
+---------------------------------------
+RTAnkleInversion_deg_
+tau, first minimum in AMI: 15.0
+V_AMI: 1.0567598042499478
+
+---------------------------------------
+LTContact
+tau, first minimum in AMI: 26.0
+V_AMI: 0.17997701352194642
+
+---------------------------------------
+LTContact
+tau, first minimum in AMI: 26.0
+V_AMI: 0.17997701352194642
+
+---------------------------------------
+PelvisAccelSensorX_mG_
+tau, first minimum in AMI: 12.0
+V_AMI: 0.4005185930826195
+
+---------------------------------------
+PelvisAccelSensorY_mG_
+tau, first minimum in AMI: 13.0
+V_AMI: 0.31449040903210845
+
+---------------------------------------
+PelvisAccelSensorZ_mG_
+tau, first minimum in AMI: 11.0
+V_AMI: 0.7336211677645248
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Pelvis_Acceleration_x_mG_
+tau, first minimum in AMI: 20.0
+V_AMI: 0.2179810486941622
+
+---------------------------------------
+PelvisAccelSensorX_mG_
+tau, first minimum in AMI: 12.0
+V_AMI: 0.4005185930826195
+
+---------------------------------------
+PelvisAccelSensorY_mG_
+tau, first minimum in AMI: 13.0
+V_AMI: 0.31449040903210845
+
+---------------------------------------
+PelvisAccelSensorZ_mG_
+tau, first minimum in AMI: 11.0
+V_AMI: 0.7336211677645248
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Pelvis_Acceleration_x_mG_
+tau, first minimum in AMI: 20.0
+V_AMI: 0.2179810486941622
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Pelvis_Acceleration_y_mG_
+tau, first minimum in AMI: 24.0
+V_AMI: 0.16995272705223638
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Pelvis_Acceleration_z_mG_
+tau, first minimum in AMI: 13.0
+V_AMI: 0.5673578197758802
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Pelvis_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 23.0
+V_AMI: 0.3954951856304874
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Pelvis_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 9.0
+V_AMI: 0.18034759223623692
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Pelvis_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 16.0
+V_AMI: 0.47929267914112056
+
+---------------------------------------
+PelvisCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+PelvisPitch_deg_
+tau, first minimum in AMI: 25.0
+V_AMI: 0.21145372803116122
+
+---------------------------------------
+PelvisRoll_deg_
+tau, first minimum in AMI: 16.0
+V_AMI: 0.949648126420238
+
+---------------------------------------
+LTPelvicTilt_deg_
+tau, first minimum in AMI: 23.0
+V_AMI: 0.21175012438638458
+
+---------------------------------------
+LTPelvicObliquity_deg_
+tau, first minimum in AMI: 17.0
+V_AMI: 0.9305316934747283
+
+---------------------------------------
+LTPelvicRotation_deg_
+tau, first minimum in AMI: 26.0
+V_AMI: 0.8099770155828662
+
+---------------------------------------
+RTPelvicTilt_deg_
+tau, first minimum in AMI: 23.0
+V_AMI: 0.21175012438638458
+
+---------------------------------------
+RTPelvicObliquity_deg_
+tau, first minimum in AMI: 17.0
+V_AMI: 0.9304890750169715
+
+---------------------------------------
+RTPelvicRotation_deg_
+tau, first minimum in AMI: 26.0
+V_AMI: 0.8099741792753495
+
+---------------------------------------
+LowerSpineAccelSensorX_mG_
+tau, first minimum in AMI: 14.0
+V_AMI: 0.6813926975625462
+
+---------------------------------------
+LowerSpineAccelSensorY_mG_
+tau, first minimum in AMI: 14.0
+V_AMI: 0.254215684380786
+
+---------------------------------------
+LowerSpineAccelSensorZ_mG_
+tau, first minimum in AMI: 12.0
+V_AMI: 0.8387088119971978
+
+---------------------------------------
+NoraxonMyoMotion_Segments_LowerSpine_Acceleration_x_mG_
+tau, first minimum in AMI: 23.0
+V_AMI: 0.1722832260881822
+
+---------------------------------------
+NoraxonMyoMotion_Segments_LowerSpine_Acceleration_y_mG_
+tau, first minimum in AMI: 22.0
+V_AMI: 0.11657082550147405
+
+---------------------------------------
+NoraxonMyoMotion_Segments_LowerSpine_Acceleration_z_mG_
+tau, first minimum in AMI: 13.0
+V_AMI: 0.7067510015221217
+
+---------------------------------------
+NoraxonMyoMotion_Segments_LowerSpine_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 28.0
+V_AMI: 0.14315400517674282
+
+---------------------------------------
+NoraxonMyoMotion_Segments_LowerSpine_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 10.0
+V_AMI: 0.18308802815167338
+
+---------------------------------------
+NoraxonMyoMotion_Segments_LowerSpine_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 24.0
+V_AMI: 0.3712704840218476
+
+---------------------------------------
+LowerSpineCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+LowerSpinePitch_deg_
+tau, first minimum in AMI: 13.0
+V_AMI: 0.9965819844029543
+
+---------------------------------------
+LowerSpineRoll_deg_
+tau, first minimum in AMI: 15.0
+V_AMI: 0.9665447387072219
+
+---------------------------------------
+UpperSpineAccelSensorX_mG_
+tau, first minimum in AMI: 12.0
+V_AMI: 0.658165995392517
+
+---------------------------------------
+UpperSpineAccelSensorY_mG_
+tau, first minimum in AMI: 26.0
+V_AMI: 0.2909152775440473
+
+---------------------------------------
+UpperSpineAccelSensorZ_mG_
+tau, first minimum in AMI: 18.0
+V_AMI: 0.5536983060366152
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperSpine_Acceleration_x_mG_
+tau, first minimum in AMI: 21.0
+V_AMI: 0.20235683372954694
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperSpine_Acceleration_y_mG_
+tau, first minimum in AMI: 22.0
+V_AMI: 0.18273239364131483
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperSpine_Acceleration_z_mG_
+tau, first minimum in AMI: 17.0
+V_AMI: 0.7073705567228356
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperSpine_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 4.0
+V_AMI: 1.073787805804361
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperSpine_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 18.0
+V_AMI: 0.14690215803578177
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperSpine_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 28.0
+V_AMI: 0.20636863459151783
+
+---------------------------------------
+UpperSpineCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+UpperSpinePitch_deg_
+tau, first minimum in AMI: 12.0
+V_AMI: 1.077848456137571
+
+---------------------------------------
+UpperSpineRoll_deg_
+tau, first minimum in AMI: 15.0
+V_AMI: 1.0234861320776405
+
+---------------------------------------
+HeadAccelSensorX_mG_
+tau, first minimum in AMI: 15.0
+V_AMI: 0.8406525104390664
+
+---------------------------------------
+HeadAccelSensorY_mG_
+tau, first minimum in AMI: 28.0
+V_AMI: 0.4540161680862679
+
+---------------------------------------
+HeadAccelSensorZ_mG_
+tau, first minimum in AMI: 33.0
+V_AMI: 0.2369892622453183
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Head_Acceleration_x_mG_
+tau, first minimum in AMI: 6.0
+V_AMI: 0.9791219522710005
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Head_Acceleration_y_mG_
+tau, first minimum in AMI: 6.0
+V_AMI: 1.0419290914371553
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Head_Acceleration_z_mG_
+tau, first minimum in AMI: 15.0
+V_AMI: 0.8406577299410247
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Head_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 22.0
+V_AMI: 0.25248516729025516
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Head_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 15.0
+V_AMI: 0.22736340642531436
+
+---------------------------------------
+NoraxonMyoMotion_Segments_Head_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 20.0
+V_AMI: 0.1576396161623691
+
+---------------------------------------
+HeadCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+HeadPitch_deg_
+tau, first minimum in AMI: 26.0
+V_AMI: 1.064236853614229
+
+---------------------------------------
+HeadRoll_deg_
+tau, first minimum in AMI: 32.0
+V_AMI: 1.0676223510661345
+
+---------------------------------------
+LTUpperArmAccelSensorX_mG_
+tau, first minimum in AMI: 13.0
+V_AMI: 0.7686606096941626
+
+---------------------------------------
+LTUpperArmAccelSensorY_mG_
+tau, first minimum in AMI: 17.0
+V_AMI: 0.17570497764237797
+
+---------------------------------------
+LTUpperArmAccelSensorZ_mG_
+tau, first minimum in AMI: 21.0
+V_AMI: 0.13688224870977414
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmLT_Acceleration_x_mG_
+tau, first minimum in AMI: 6.0
+V_AMI: 1.0778428823030004
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmLT_Acceleration_y_mG_
+tau, first minimum in AMI: 31.0
+V_AMI: 0.13572802169526313
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmLT_Acceleration_z_mG_
+tau, first minimum in AMI: 14.0
+V_AMI: 0.7681209323358547
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmLT_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 20.0
+V_AMI: 0.668361313276995
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmLT_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 8.0
+V_AMI: 1.0655358219537692
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmLT_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 17.0
+V_AMI: 1.001421985082164
+
+---------------------------------------
+LTUpperArmCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+LTUpperArmPitch_deg_
+tau, first minimum in AMI: 30.0
+V_AMI: 1.0183649454623795
+
+---------------------------------------
+LTUpperArmRoll_deg_
+tau, first minimum in AMI: 25.0
+V_AMI: 1.039456931599802
+
+---------------------------------------
+LTForearmAccelSensorX_mG_
+tau, first minimum in AMI: 28.0
+V_AMI: 0.26810648090151745
+
+---------------------------------------
+LTForearmAccelSensorY_mG_
+tau, first minimum in AMI: 18.0
+V_AMI: 0.2022980481944218
+
+---------------------------------------
+LTForearmAccelSensorZ_mG_
+tau, first minimum in AMI: 29.0
+V_AMI: 0.3370025094862449
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmLT_Acceleration_x_mG_
+tau, first minimum in AMI: 14.0
+V_AMI: 1.0306411049450785
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmLT_Acceleration_y_mG_
+tau, first minimum in AMI: 12.0
+V_AMI: 1.0392310184962803
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmLT_Acceleration_z_mG_
+tau, first minimum in AMI: 30.0
+V_AMI: 0.2859130930740793
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmLT_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 25.0
+V_AMI: 0.21928761027198
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmLT_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 17.0
+V_AMI: 1.0447779837605822
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmLT_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 19.0
+V_AMI: 0.9528332020625878
+
+---------------------------------------
+LTForearmCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+LTForearmPitch_deg_
+tau, first minimum in AMI: 24.0
+V_AMI: 1.0363563322291547
+
+---------------------------------------
+LTForearmRoll_deg_
+tau, first minimum in AMI: 34.0
+V_AMI: 1.0155724457087094
+
+---------------------------------------
+LTHandAccelSensorX_mG_
+tau, first minimum in AMI: 10.0
+V_AMI: 1.003300857815946
+
+---------------------------------------
+LTHandAccelSensorY_mG_
+tau, first minimum in AMI: 32.0
+V_AMI: 0.18344152473958286
+
+---------------------------------------
+LTHandAccelSensorZ_mG_
+tau, first minimum in AMI: 24.0
+V_AMI: 0.44725342632708537
+
+---------------------------------------
+NoraxonMyoMotion_Segments_HandLT_Acceleration_x_mG_
+tau, first minimum in AMI: 14.0
+V_AMI: 1.057366500475428
+
+---------------------------------------
+NoraxonMyoMotion_Segments_HandLT_Acceleration_y_mG_
+tau, first minimum in AMI: 14.0
+V_AMI: 1.0682412562750598
+
+---------------------------------------
+NoraxonMyoMotion_Segments_HandLT_Acceleration_z_mG_
+tau, first minimum in AMI: 30.0
+V_AMI: 0.33495094393944447
+
+---------------------------------------
+NoraxonMyoMotion_Segments_HandLT_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 21.0
+V_AMI: 0.15320033940545633
+
+---------------------------------------
+NoraxonMyoMotion_Segments_HandLT_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 23.0
+V_AMI: 0.44478565559768585
+
+---------------------------------------
+NoraxonMyoMotion_Segments_HandLT_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 16.0
+V_AMI: 0.9968819961564347
+
+---------------------------------------
+LTHandCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+LTHandPitch_deg_
+tau, first minimum in AMI: 21.0
+V_AMI: 1.0449375156471776
+
+---------------------------------------
+LTHandRoll_deg_
+tau, first minimum in AMI: 29.0
+V_AMI: 1.0300492557127905
+
+---------------------------------------
+LTThighAccelSensorX_mG_
+tau, first minimum in AMI: 19.0
+V_AMI: 0.7018403358855902
+
+---------------------------------------
+LTThighAccelSensorY_mG_
+tau, first minimum in AMI: 9.0
+V_AMI: 0.3129344247248642
+
+---------------------------------------
+LTThighAccelSensorZ_mG_
+tau, first minimum in AMI: 12.0
+V_AMI: 0.5781683136264055
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighLT_Acceleration_x_mG_
+tau, first minimum in AMI: 29.0
+V_AMI: 0.2328430779061963
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighLT_Acceleration_y_mG_
+tau, first minimum in AMI: 16.0
+V_AMI: 0.18415803731712688
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighLT_Acceleration_z_mG_
+tau, first minimum in AMI: 7.0
+V_AMI: 0.9724778874791136
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighLT_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 18.0
+V_AMI: 0.3754659949234081
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighLT_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 21.0
+V_AMI: 1.337257410741291
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighLT_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 17.0
+V_AMI: 0.48621685192611874
+
+---------------------------------------
+LTThighCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+LTThighPitch_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+LTThighRoll_deg_
+tau, first minimum in AMI: 12.0
+V_AMI: 1.0416586861516741
+
+---------------------------------------
+LTShankAccelSensorX_mG_
+tau, first minimum in AMI: 15.0
+V_AMI: 0.7578517267319138
+
+---------------------------------------
+LTShankAccelSensorY_mG_
+tau, first minimum in AMI: 10.0
+V_AMI: 0.5563003769565372
+
+---------------------------------------
+LTShankAccelSensorZ_mG_
+tau, first minimum in AMI: 6.0
+V_AMI: 1.0156263140849588
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankLT_Acceleration_x_mG_
+tau, first minimum in AMI: 31.0
+V_AMI: 0.2723104170014996
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankLT_Acceleration_y_mG_
+tau, first minimum in AMI: 32.0
+V_AMI: 0.21943615806810693
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankLT_Acceleration_z_mG_
+tau, first minimum in AMI: 15.0
+V_AMI: 0.48902741573561725
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankLT_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 11.0
+V_AMI: 0.3925637375646561
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankLT_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 13.0
+V_AMI: 1.6544270201339477
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankLT_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 15.0
+V_AMI: 0.9081332776169339
+
+---------------------------------------
+LTShankCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+LTShankPitch_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+LTShankRoll_deg_
+tau, first minimum in AMI: 23.0
+V_AMI: 0.9456799231786494
+
+---------------------------------------
+LTFootAccelSensorX_mG_
+tau, first minimum in AMI: 16.0
+V_AMI: 0.8648063978837608
+
+---------------------------------------
+LTFootAccelSensorY_mG_
+tau, first minimum in AMI: 28.0
+V_AMI: 0.3949838412728638
+
+---------------------------------------
+LTFootAccelSensorZ_mG_
+tau, first minimum in AMI: 21.0
+V_AMI: 0.7189909914947663
+
+---------------------------------------
+NoraxonMyoMotion_Segments_FootLT_Acceleration_x_mG_
+tau, first minimum in AMI: 29.0
+V_AMI: 0.6004812057434724
+
+---------------------------------------
+NoraxonMyoMotion_Segments_FootLT_Acceleration_y_mG_
+tau, first minimum in AMI: 8.0
+V_AMI: 0.8618650005984638
+
+---------------------------------------
+NoraxonMyoMotion_Segments_FootLT_Acceleration_z_mG_
+tau, first minimum in AMI: 15.0
+V_AMI: 0.9529789863128475
+
+---------------------------------------
+NoraxonMyoMotion_Segments_FootLT_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 12.0
+V_AMI: 0.6807946270482947
+
+---------------------------------------
+NoraxonMyoMotion_Segments_FootLT_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+NoraxonMyoMotion_Segments_FootLT_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 16.0
+V_AMI: 1.034506168583604
+
+---------------------------------------
+LTContact
+tau, first minimum in AMI: 26.0
+V_AMI: 0.17997701352194642
+
+---------------------------------------
+LTFootCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+LTFootPitch_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+LTFootRoll_deg_
+tau, first minimum in AMI: 16.0
+V_AMI: 0.8787033451252999
+
+---------------------------------------
+LTFootPitchDown_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+LTFootRollMed_deg_
+tau, first minimum in AMI: 21.0
+V_AMI: 0.898191648486875
+
+---------------------------------------
+LTFootRotationExt_deg_
+tau, first minimum in AMI: 21.0
+V_AMI: 0.927517353298909
+
+---------------------------------------
+RTUpperArmAccelSensorX_mG_
+tau, first minimum in AMI: 14.0
+V_AMI: 0.762712985733382
+
+---------------------------------------
+RTUpperArmAccelSensorY_mG_
+tau, first minimum in AMI: 18.0
+V_AMI: 0.27267614616069713
+
+---------------------------------------
+RTUpperArmAccelSensorZ_mG_
+tau, first minimum in AMI: 23.0
+V_AMI: 0.2608480279510934
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmRT_Acceleration_x_mG_
+tau, first minimum in AMI: 7.0
+V_AMI: 1.0082586772362157
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmRT_Acceleration_y_mG_
+tau, first minimum in AMI: 6.0
+V_AMI: 0.9441177938396866
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmRT_Acceleration_z_mG_
+tau, first minimum in AMI: 13.0
+V_AMI: 0.8064237035001776
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmRT_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 21.0
+V_AMI: 0.45983596251114467
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmRT_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 25.0
+V_AMI: 0.9867572800815538
+
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmRT_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 27.0
+V_AMI: 0.4774413111160179
+
+---------------------------------------
+RTUpperArmCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+RTUpperArmPitch_deg_
+tau, first minimum in AMI: 30.0
+V_AMI: 1.0292756244057744
+
+---------------------------------------
+RTUpperArmRoll_deg_
+tau, first minimum in AMI: 19.0
+V_AMI: 1.0058616350472969
+
+---------------------------------------
+RTForearmAccelSensorX_mG_
+tau, first minimum in AMI: 24.0
+V_AMI: 0.28336420554079556
+
+---------------------------------------
+RTForearmAccelSensorY_mG_
+tau, first minimum in AMI: 17.0
+V_AMI: 0.11436354148676048
+
+---------------------------------------
+RTForearmAccelSensorZ_mG_
+tau, first minimum in AMI: 31.0
+V_AMI: 0.2260846334868541
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmRT_Acceleration_x_mG_
+tau, first minimum in AMI: 13.0
+V_AMI: 1.0728952630663917
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmRT_Acceleration_y_mG_
+tau, first minimum in AMI: 12.0
+V_AMI: 1.023789478771096
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmRT_Acceleration_z_mG_
+tau, first minimum in AMI: 25.0
+V_AMI: 0.29093680229655977
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmRT_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 20.0
+V_AMI: 0.21751597182351964
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmRT_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 22.0
+V_AMI: 1.0136734449635292
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmRT_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 19.0
+V_AMI: 0.964394791974968
+
+---------------------------------------
+RTForearmCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+RTForearmPitch_deg_
+tau, first minimum in AMI: 24.0
+V_AMI: 1.040677949162116
+
+---------------------------------------
+RTForearmRoll_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+RTHandAccelSensorX_mG_
+tau, first minimum in AMI: 31.0
+V_AMI: 0.32771473864226774
+
+---------------------------------------
+RTHandAccelSensorY_mG_
+tau, first minimum in AMI: 31.0
+V_AMI: 0.14402938647026553
+
+---------------------------------------
+RTHandAccelSensorZ_mG_
+tau, first minimum in AMI: 32.0
+V_AMI: 0.33022900172638825
+
+---------------------------------------
+NoraxonMyoMotion_Segments_HandRT_Acceleration_x_mG_
+tau, first minimum in AMI: 16.0
+V_AMI: 1.0547698119285835
+
+---------------------------------------
+NoraxonMyoMotion_Segments_HandRT_Acceleration_y_mG_
+tau, first minimum in AMI: 14.0
+V_AMI: 1.009246787209638
+
+---------------------------------------
+NoraxonMyoMotion_Segments_HandRT_Acceleration_z_mG_
+tau, first minimum in AMI: 26.0
+V_AMI: 0.2540379644340839
+
+---------------------------------------
+NoraxonMyoMotion_Segments_HandRT_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 18.0
+V_AMI: 0.11564312758203342
+
+---------------------------------------
+NoraxonMyoMotion_Segments_HandRT_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 25.0
+V_AMI: 0.5701531097945429
+
+---------------------------------------
+NoraxonMyoMotion_Segments_HandRT_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 14.0
+V_AMI: 1.0127514955510288
+
+---------------------------------------
+RTHandCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+RTHandPitch_deg_
+tau, first minimum in AMI: 21.0
+V_AMI: 1.0347848859480742
+
+---------------------------------------
+RTHandRoll_deg_
+tau, first minimum in AMI: 31.0
+V_AMI: 1.0533032956792638
+
+---------------------------------------
+RTThighAccelSensorX_mG_
+tau, first minimum in AMI: 8.0
+V_AMI: 0.8552557029155768
+
+---------------------------------------
+RTThighAccelSensorY_mG_
+tau, first minimum in AMI: 8.0
+V_AMI: 0.34713087278222104
+
+---------------------------------------
+RTThighAccelSensorZ_mG_
+tau, first minimum in AMI: 12.0
+V_AMI: 0.4796021039545723
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighRT_Acceleration_x_mG_
+tau, first minimum in AMI: 26.0
+V_AMI: 0.20425749351297218
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighRT_Acceleration_y_mG_
+tau, first minimum in AMI: 15.0
+V_AMI: 0.1684019143464781
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighRT_Acceleration_z_mG_
+tau, first minimum in AMI: 8.0
+V_AMI: 0.8827992473194246
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighRT_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 21.0
+V_AMI: 0.29045260490459085
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighRT_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 20.0
+V_AMI: 1.0508003602547147
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighRT_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 11.0
+V_AMI: 0.6423426164146561
+
+---------------------------------------
+RTThighCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+RTThighPitch_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+RTThighRoll_deg_
+tau, first minimum in AMI: 11.0
+V_AMI: 0.9879959244888676
+
+---------------------------------------
+RTShankAccelSensorX_mG_
+tau, first minimum in AMI: 9.0
+V_AMI: 1.0861483665594724
+
+---------------------------------------
+RTShankAccelSensorY_mG_
+tau, first minimum in AMI: 10.0
+V_AMI: 0.3492148748062752
+
+---------------------------------------
+RTShankAccelSensorZ_mG_
+tau, first minimum in AMI: 10.0
+V_AMI: 0.9399248083039873
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankRT_Acceleration_x_mG_
+tau, first minimum in AMI: 28.0
+V_AMI: 0.25320907122820113
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankRT_Acceleration_y_mG_
+tau, first minimum in AMI: 28.0
+V_AMI: 0.17195511384717074
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankRT_Acceleration_z_mG_
+tau, first minimum in AMI: 9.0
+V_AMI: 0.7207456413626926
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankRT_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 11.0
+V_AMI: 0.322363736747008
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankRT_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 28.0
+V_AMI: 1.3959436245229755
+
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankRT_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 15.0
+V_AMI: 0.9353310947794964
+
+---------------------------------------
+RTShankCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+RTShankPitch_deg_
+tau, first minimum in AMI: 6.0
+V_AMI: 3.4324312446727365
+
+---------------------------------------
+RTShankRoll_deg_
+tau, first minimum in AMI: 29.0
+V_AMI: 0.8838561018009261
+
+---------------------------------------
+RTFootAccelSensorX_mG_
+tau, first minimum in AMI: 20.0
+V_AMI: 0.8337949149130793
+
+---------------------------------------
+RTFootAccelSensorY_mG_
+tau, first minimum in AMI: 32.0
+V_AMI: 0.3489185976349627
+
+---------------------------------------
+RTFootAccelSensorZ_mG_
+tau, first minimum in AMI: 16.0
+V_AMI: 0.8553782003388322
+
+---------------------------------------
+NoraxonMyoMotion_Segments_FootRT_Acceleration_x_mG_
+tau, first minimum in AMI: 13.0
+V_AMI: 0.9259304402057973
+
+---------------------------------------
+NoraxonMyoMotion_Segments_FootRT_Acceleration_y_mG_
+tau, first minimum in AMI: 25.0
+V_AMI: 0.4240097762191209
+
+---------------------------------------
+NoraxonMyoMotion_Segments_FootRT_Acceleration_z_mG_
+tau, first minimum in AMI: 15.0
+V_AMI: 1.0705098201452645
+
+---------------------------------------
+NoraxonMyoMotion_Segments_FootRT_Gyroscope_x_deg_s_
+tau, first minimum in AMI: 15.0
+V_AMI: 0.6816954494188227
+
+---------------------------------------
+NoraxonMyoMotion_Segments_FootRT_Gyroscope_y_deg_s_
+tau, first minimum in AMI: 24.0
+V_AMI: 1.2228354989006518
+
+---------------------------------------
+NoraxonMyoMotion_Segments_FootRT_Gyroscope_z_deg_s_
+tau, first minimum in AMI: 17.0
+V_AMI: 1.2236676045603507
+
+---------------------------------------
+RTContact
+tau, first minimum in AMI: 26.0
+V_AMI: 0.18249110686047768
+
+---------------------------------------
+RTFootCourse_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+RTFootPitch_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+RTFootRoll_deg_
+tau, first minimum in AMI: 34.0
+V_AMI: 0.6711706121531599
+
+---------------------------------------
+RTFootPitchDown_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+RTFootRollMed_deg_
+tau, first minimum in AMI: 19.0
+V_AMI: 0.8277451117627523
+
+---------------------------------------
+RTFootRotationExt_deg_
+tau, first minimum in AMI: 21.0
+V_AMI: 0.9723901707842668
+
+---------------------------------------
+LumbarAxial_RT_deg_
+tau, first minimum in AMI: 31.0
+V_AMI: 0.7384925485431388
+
+---------------------------------------
+LumbarFlexion_deg_
+tau, first minimum in AMI: 32.0
+V_AMI: 0.202222255989803
+
+---------------------------------------
+LumbarLateral_RT_deg_
+tau, first minimum in AMI: 16.0
+V_AMI: 0.9280398935609959
+
+---------------------------------------
+ThoracicAxial_RT_deg_
+tau, first minimum in AMI: 24.0
+V_AMI: 1.0479761287575466
+
+---------------------------------------
+ThoracicFlexion_deg_
+tau, first minimum in AMI: 12.0
+V_AMI: 1.074567754095175
+
+---------------------------------------
+ThoracicLateral_RT_deg_
+tau, first minimum in AMI: 15.0
+V_AMI: 1.0450708418938373
+
+---------------------------------------
+CervicalAxial_RT_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+CervicalFlexion_deg_
+tau, first minimum in AMI: 19.0
+V_AMI: 1.0266690663295341
+
+---------------------------------------
+CervicalLateral_RT_deg_
+tau, first minimum in AMI: 16.0
+V_AMI: 1.0426689758224028
+
+---------------------------------------
+LTShoulderTotalFlexion_deg_
+tau, first minimum in AMI: 15.0
+V_AMI: 0.9849476069398008
+
+---------------------------------------
+LTShoulderRotationExt_deg_
+tau, first minimum in AMI: 25.0
+V_AMI: 1.0475403493602617
+
+---------------------------------------
+LTShoulderFlexion_deg_
+tau, first minimum in AMI: 32.0
+V_AMI: 0.9998000590588494
+
+---------------------------------------
+LTShoulderAbduction_deg_
+tau, first minimum in AMI: 18.0
+V_AMI: 1.0223874617168551
+
+---------------------------------------
+LTElbowFlexion_deg_
+tau, first minimum in AMI: 20.0
+V_AMI: 1.0393630691019973
+
+---------------------------------------
+LTWristExtension_deg_
+tau, first minimum in AMI: 17.0
+V_AMI: 1.0146492241889047
+
+---------------------------------------
+LTWristRadial_deg_
+tau, first minimum in AMI: 25.0
+V_AMI: 0.3553661792559124
+
+---------------------------------------
+LTWristSupination_deg_
+tau, first minimum in AMI: 18.0
+V_AMI: 1.029858216084413
+
+---------------------------------------
+LTHipFlexion_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+LTHipAbduction_deg_
+tau, first minimum in AMI: 24.0
+V_AMI: 0.9394888067504487
+
+---------------------------------------
+LTHipRotationExt_deg_
+tau, first minimum in AMI: 14.0
+V_AMI: 1.0105028331688544
+
+---------------------------------------
+LTKneeAbduction_deg_
+tau, first minimum in AMI: 22.0
+V_AMI: 0.3665806177124276
+
+---------------------------------------
+LTKneeRotationExt_deg_
+tau, first minimum in AMI: 14.0
+V_AMI: 1.0092755922672993
+
+---------------------------------------
+LTKneeFlexion_deg_
+tau, first minimum in AMI: 31.0
+V_AMI: 1.2054333895819411
+
+---------------------------------------
+LTAnkleDorsiflexion_deg_
+tau, first minimum in AMI: 29.0
+V_AMI: 0.9737489211817087
+
+---------------------------------------
+LTAnkleAbduction_deg_
+tau, first minimum in AMI: 21.0
+V_AMI: 1.158975917365333
+
+---------------------------------------
+LTAnkleInversion_deg_
+tau, first minimum in AMI: 20.0
+V_AMI: 1.042817710720532
+
+---------------------------------------
+RTShoulderTotalFlexion_deg_
+tau, first minimum in AMI: 33.0
+V_AMI: 0.2813078391149446
+
+---------------------------------------
+RTShoulderRotationExt_deg_
+tau, first minimum in AMI: 23.0
+V_AMI: 1.0395895214431068
+
+---------------------------------------
+RTShoulderFlexion_deg_
+tau, first minimum in AMI: 32.0
+V_AMI: 1.0122198904643598
+
+---------------------------------------
+RTShoulderAbduction_deg_
+tau, first minimum in AMI: 12.0
+V_AMI: 1.023150118266697
+
+---------------------------------------
+RTElbowFlexion_deg_
+tau, first minimum in AMI: 25.0
+V_AMI: 1.0194252164285813
+
+---------------------------------------
+RTWristExtension_deg_
+tau, first minimum in AMI: 19.0
+V_AMI: 1.0599718117236665
+
+---------------------------------------
+RTWristRadial_deg_
+tau, first minimum in AMI: 18.0
+V_AMI: 1.0300249091064526
+
+---------------------------------------
+RTWristSupination_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+RTHipFlexion_deg_
+tau, first minimum in AMI: 0
+
+---------------------------------------
+RTHipAbduction_deg_
+tau, first minimum in AMI: 30.0
+V_AMI: 1.1657667613666363
+
+---------------------------------------
+RTHipRotationExt_deg_
+tau, first minimum in AMI: 16.0
+V_AMI: 1.011773231755725
+
+---------------------------------------
+RTKneeAbduction_deg_
+tau, first minimum in AMI: 23.0
+V_AMI: 0.9683808691419864
+
+---------------------------------------
+RTKneeRotationExt_deg_
+tau, first minimum in AMI: 21.0
+V_AMI: 1.1296916925977216
+
+---------------------------------------
+RTKneeFlexion_deg_
+tau, first minimum in AMI: 30.0
+V_AMI: 1.3656385280507177
+
+---------------------------------------
+RTAnkleDorsiflexion_deg_
+tau, first minimum in AMI: 32.0
+V_AMI: 0.9829228219576956
+
+---------------------------------------
+RTAnkleAbduction_deg_
+tau, first minimum in AMI: 14.0
+V_AMI: 1.0415145719266947
+
+---------------------------------------
+RTAnkleInversion_deg_
+tau, first minimum in AMI: 15.0
+V_AMI: 1.0567598042499478
+
+---------------------------------------
+PelvisAccelSensorX_mG_
+tau, first minimum in AMI: 12.0
+V_AMI: 0.4005185930826195
+
+---------------------------------------

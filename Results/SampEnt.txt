@@ -1,0 +1,738 @@
+PelvisAccelSensorX_mG_
+Output: -0.0
+---------------------------------------
+PelvisAccelSensorY_mG_
+Output: -0.0
+---------------------------------------
+PelvisAccelSensorZ_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_Pelvis_Acceleration_x_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_Pelvis_Acceleration_y_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_Pelvis_Acceleration_z_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_Pelvis_Gyroscope_x_deg_s_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_Pelvis_Gyroscope_y_deg_s_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_Pelvis_Gyroscope_z_deg_s_
+Output: 9.700538910924348e-07
+---------------------------------------
+PelvisCourse_deg_
+Output: -0.0
+---------------------------------------
+PelvisPitch_deg_
+Output: 0.1801486091715332
+---------------------------------------
+PelvisRoll_deg_
+Output: 0.020913822561333603
+---------------------------------------
+LTPelvicTilt_deg_
+Output: 0.1742362965769942
+---------------------------------------
+LTPelvicObliquity_deg_
+Output: 0.020949507974300126
+---------------------------------------
+LTPelvicRotation_deg_
+Output: 4.2300880373666856e-05
+---------------------------------------
+RTPelvicTilt_deg_
+Output: 0.1742362965769942
+---------------------------------------
+RTPelvicObliquity_deg_
+Output: 0.020949507974300126
+---------------------------------------
+RTPelvicRotation_deg_
+Output: 4.2300880373666856e-05
+---------------------------------------
+LowerSpineAccelSensorX_mG_
+Output: -0.0
+---------------------------------------
+LowerSpineAccelSensorY_mG_
+Output: -0.0
+---------------------------------------
+LowerSpineAccelSensorZ_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_LowerSpine_Acceleration_x_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_LowerSpine_Acceleration_y_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_LowerSpine_Acceleration_z_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_LowerSpine_Gyroscope_x_deg_s_
+Output: 0.00018255735024907613
+---------------------------------------
+NoraxonMyoMotion_Segments_LowerSpine_Gyroscope_y_deg_s_
+Output: 0.005727868361246849
+---------------------------------------
+NoraxonMyoMotion_Segments_LowerSpine_Gyroscope_z_deg_s_
+Output: 0.00110089199842657
+---------------------------------------
+LowerSpineCourse_deg_
+Output: -0.0
+---------------------------------------
+LowerSpinePitch_deg_
+Output: 0.1363491640652962
+---------------------------------------
+LowerSpineRoll_deg_
+Output: 0.05659358942598916
+---------------------------------------
+UpperSpineAccelSensorX_mG_
+Output: -0.0
+---------------------------------------
+UpperSpineAccelSensorY_mG_
+Output: -0.0
+---------------------------------------
+UpperSpineAccelSensorZ_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperSpine_Acceleration_x_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperSpine_Acceleration_y_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperSpine_Acceleration_z_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperSpine_Gyroscope_x_deg_s_
+Output: 0.006630012911658853
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperSpine_Gyroscope_y_deg_s_
+Output: 0.003986716655486616
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperSpine_Gyroscope_z_deg_s_
+Output: 0.009287393093732646
+---------------------------------------
+UpperSpineCourse_deg_
+Output: -0.0
+---------------------------------------
+UpperSpinePitch_deg_
+Output: 0.12287064016895492
+---------------------------------------
+UpperSpineRoll_deg_
+Output: 0.12044976844299324
+---------------------------------------
+HeadAccelSensorX_mG_
+Output: -0.0
+---------------------------------------
+HeadAccelSensorY_mG_
+Output: -0.0
+---------------------------------------
+HeadAccelSensorZ_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_Head_Acceleration_x_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_Head_Acceleration_y_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_Head_Acceleration_z_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_Head_Gyroscope_x_deg_s_
+Output: 0.014746212986340922
+---------------------------------------
+NoraxonMyoMotion_Segments_Head_Gyroscope_y_deg_s_
+Output: 0.016454572163211063
+---------------------------------------
+NoraxonMyoMotion_Segments_Head_Gyroscope_z_deg_s_
+Output: 0.030270609273651647
+---------------------------------------
+HeadCourse_deg_
+Output: -0.0
+---------------------------------------
+HeadPitch_deg_
+Output: 0.03875949787718005
+---------------------------------------
+HeadRoll_deg_
+Output: 0.06681343100036188
+---------------------------------------
+LTUpperArmAccelSensorX_mG_
+Output: -0.0
+---------------------------------------
+LTUpperArmAccelSensorY_mG_
+Output: -0.0
+---------------------------------------
+LTUpperArmAccelSensorZ_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmLT_Acceleration_x_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmLT_Acceleration_y_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmLT_Acceleration_z_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmLT_Gyroscope_x_deg_s_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmLT_Gyroscope_y_deg_s_
+Output: 8.050400126209095e-05
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmLT_Gyroscope_z_deg_s_
+Output: -0.0
+---------------------------------------
+LTUpperArmCourse_deg_
+Output: -0.0
+---------------------------------------
+LTUpperArmPitch_deg_
+Output: 0.011635880163393082
+---------------------------------------
+LTUpperArmRoll_deg_
+Output: 0.010077841607078251
+---------------------------------------
+LTForearmAccelSensorX_mG_
+Output: -0.0
+---------------------------------------
+LTForearmAccelSensorY_mG_
+Output: -0.0
+---------------------------------------
+LTForearmAccelSensorZ_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmLT_Acceleration_x_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmLT_Acceleration_y_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmLT_Acceleration_z_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmLT_Gyroscope_x_deg_s_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmLT_Gyroscope_y_deg_s_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmLT_Gyroscope_z_deg_s_
+Output: -0.0
+---------------------------------------
+LTForearmCourse_deg_
+Output: -0.0
+---------------------------------------
+LTForearmPitch_deg_
+Output: 0.005269068133977969
+---------------------------------------
+LTForearmRoll_deg_
+Output: 5.97840436699333e-05
+---------------------------------------
+LTHandAccelSensorX_mG_
+Output: -0.0
+---------------------------------------
+LTHandAccelSensorY_mG_
+Output: -0.0
+---------------------------------------
+LTHandAccelSensorZ_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_HandLT_Acceleration_x_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_HandLT_Acceleration_y_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_HandLT_Acceleration_z_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_HandLT_Gyroscope_x_deg_s_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_HandLT_Gyroscope_y_deg_s_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_HandLT_Gyroscope_z_deg_s_
+Output: -0.0
+---------------------------------------
+LTHandCourse_deg_
+Output: -0.0
+---------------------------------------
+LTHandPitch_deg_
+Output: 0.004207366076922631
+---------------------------------------
+LTHandRoll_deg_
+Output: -0.0
+---------------------------------------
+LTThighAccelSensorX_mG_
+Output: -0.0
+---------------------------------------
+LTThighAccelSensorY_mG_
+Output: -0.0
+---------------------------------------
+LTThighAccelSensorZ_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighLT_Acceleration_x_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighLT_Acceleration_y_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighLT_Acceleration_z_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighLT_Gyroscope_x_deg_s_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighLT_Gyroscope_y_deg_s_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighLT_Gyroscope_z_deg_s_
+Output: 1.5534575413458632e-08
+---------------------------------------
+LTThighCourse_deg_
+Output: -0.0
+---------------------------------------
+LTThighPitch_deg_
+Output: -0.0
+---------------------------------------
+LTThighRoll_deg_
+Output: 0.061414360367269
+---------------------------------------
+LTShankAccelSensorX_mG_
+Output: -0.0
+---------------------------------------
+LTShankAccelSensorY_mG_
+Output: -0.0
+---------------------------------------
+LTShankAccelSensorZ_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankLT_Acceleration_x_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankLT_Acceleration_y_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankLT_Acceleration_z_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankLT_Gyroscope_x_deg_s_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankLT_Gyroscope_y_deg_s_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankLT_Gyroscope_z_deg_s_
+Output: -0.0
+---------------------------------------
+LTShankCourse_deg_
+Output: -0.0
+---------------------------------------
+LTShankPitch_deg_
+Output: -0.0
+---------------------------------------
+LTShankRoll_deg_
+Output: 0.012324644996890606
+---------------------------------------
+LTFootAccelSensorX_mG_
+Output: -0.0
+---------------------------------------
+LTFootAccelSensorY_mG_
+Output: -0.0
+---------------------------------------
+LTFootAccelSensorZ_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_FootLT_Acceleration_x_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_FootLT_Acceleration_y_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_FootLT_Acceleration_z_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_FootLT_Gyroscope_x_deg_s_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_FootLT_Gyroscope_y_deg_s_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_FootLT_Gyroscope_z_deg_s_
+Output: -0.0
+---------------------------------------
+LTFootCourse_deg_
+Output: -0.0
+---------------------------------------
+LTFootPitch_deg_
+Output: -0.0
+---------------------------------------
+LTFootRoll_deg_
+Output: 0.00806723936696993
+---------------------------------------
+LTFootPitchDown_deg_
+Output: 3.5351215212036154e-05
+---------------------------------------
+LTFootRollMed_deg_
+Output: 4.220717595918888e-05
+---------------------------------------
+LTFootRotationExt_deg_
+Output: 0.009738569847991548
+---------------------------------------
+RTUpperArmAccelSensorX_mG_
+Output: -0.0
+---------------------------------------
+RTUpperArmAccelSensorY_mG_
+Output: -0.0
+---------------------------------------
+RTUpperArmAccelSensorZ_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmRT_Acceleration_x_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmRT_Acceleration_y_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmRT_Acceleration_z_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmRT_Gyroscope_x_deg_s_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmRT_Gyroscope_y_deg_s_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_UpperArmRT_Gyroscope_z_deg_s_
+Output: -0.0
+---------------------------------------
+RTUpperArmCourse_deg_
+Output: -0.0
+---------------------------------------
+RTUpperArmPitch_deg_
+Output: 0.009557682291540824
+---------------------------------------
+RTUpperArmRoll_deg_
+Output: 0.01981048923267427
+---------------------------------------
+RTForearmAccelSensorX_mG_
+Output: -0.0
+---------------------------------------
+RTForearmAccelSensorY_mG_
+Output: -0.0
+---------------------------------------
+RTForearmAccelSensorZ_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmRT_Acceleration_x_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmRT_Acceleration_y_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmRT_Acceleration_z_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmRT_Gyroscope_x_deg_s_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmRT_Gyroscope_y_deg_s_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ForearmRT_Gyroscope_z_deg_s_
+Output: -0.0
+---------------------------------------
+RTForearmCourse_deg_
+Output: -0.0
+---------------------------------------
+RTForearmPitch_deg_
+Output: 0.004218378217517741
+---------------------------------------
+RTForearmRoll_deg_
+Output: 0.00021702961152172254
+---------------------------------------
+RTHandAccelSensorX_mG_
+Output: -0.0
+---------------------------------------
+RTHandAccelSensorY_mG_
+Output: -0.0
+---------------------------------------
+RTHandAccelSensorZ_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_HandRT_Acceleration_x_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_HandRT_Acceleration_y_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_HandRT_Acceleration_z_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_HandRT_Gyroscope_x_deg_s_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_HandRT_Gyroscope_y_deg_s_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_HandRT_Gyroscope_z_deg_s_
+Output: -0.0
+---------------------------------------
+RTHandCourse_deg_
+Output: -0.0
+---------------------------------------
+RTHandPitch_deg_
+Output: 0.0032136082548385844
+---------------------------------------
+RTHandRoll_deg_
+Output: 3.633381416335684e-07
+---------------------------------------
+RTThighAccelSensorX_mG_
+Output: -0.0
+---------------------------------------
+RTThighAccelSensorY_mG_
+Output: -0.0
+---------------------------------------
+RTThighAccelSensorZ_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighRT_Acceleration_x_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighRT_Acceleration_y_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighRT_Acceleration_z_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighRT_Gyroscope_x_deg_s_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighRT_Gyroscope_y_deg_s_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ThighRT_Gyroscope_z_deg_s_
+Output: -0.0
+---------------------------------------
+RTThighCourse_deg_
+Output: -0.0
+---------------------------------------
+RTThighPitch_deg_
+Output: -0.0
+---------------------------------------
+RTThighRoll_deg_
+Output: 0.07769724559322626
+---------------------------------------
+RTShankAccelSensorX_mG_
+Output: -0.0
+---------------------------------------
+RTShankAccelSensorY_mG_
+Output: -0.0
+---------------------------------------
+RTShankAccelSensorZ_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankRT_Acceleration_x_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankRT_Acceleration_y_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankRT_Acceleration_z_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankRT_Gyroscope_x_deg_s_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankRT_Gyroscope_y_deg_s_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_ShankRT_Gyroscope_z_deg_s_
+Output: -0.0
+---------------------------------------
+RTShankCourse_deg_
+Output: -0.0
+---------------------------------------
+RTShankPitch_deg_
+Output: -0.0
+---------------------------------------
+RTShankRoll_deg_
+Output: 0.010775153002423791
+---------------------------------------
+RTFootAccelSensorX_mG_
+Output: -0.0
+---------------------------------------
+RTFootAccelSensorY_mG_
+Output: -0.0
+---------------------------------------
+RTFootAccelSensorZ_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_FootRT_Acceleration_x_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_FootRT_Acceleration_y_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_FootRT_Acceleration_z_mG_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_FootRT_Gyroscope_x_deg_s_
+Output: -0.0
+---------------------------------------
+NoraxonMyoMotion_Segments_FootRT_Gyroscope_y_deg_s_
+Output: -0.0
+---------------------------------------
+RTFootCourse_deg_
+Output: -0.0
+---------------------------------------
+RTFootPitch_deg_
+Output: -0.0
+---------------------------------------
+RTFootRoll_deg_
+Output: 0.00881692081248464
+---------------------------------------
+RTFootPitchDown_deg_
+Output: 6.064354512262665e-05
+---------------------------------------
+RTFootRollMed_deg_
+Output: 4.233110854232171e-05
+---------------------------------------
+RTFootRotationExt_deg_
+Output: 0.012980286995064675
+---------------------------------------
+LumbarAxial_RT_deg_
+Output: 0.06534887040611617
+---------------------------------------
+LumbarFlexion_deg_
+Output: 0.13208920071907196
+---------------------------------------
+LumbarLateral_RT_deg_
+Output: 0.05080331745549539
+---------------------------------------
+ThoracicAxial_RT_deg_
+Output: 0.025864039209833677
+---------------------------------------
+ThoracicFlexion_deg_
+Output: 0.10311849965212073
+---------------------------------------
+ThoracicLateral_RT_deg_
+Output: 0.05450579646527418
+---------------------------------------
+CervicalAxial_RT_deg_
+Output: 0.01730170249818192
+---------------------------------------
+CervicalFlexion_deg_
+Output: 0.035633408990604326
+---------------------------------------
+CervicalLateral_RT_deg_
+Output: 0.08869103521315291
+---------------------------------------
+LTShoulderTotalFlexion_deg_
+Output: 0.01512875847532587
+---------------------------------------
+LTShoulderRotationExt_deg_
+Output: 0.0006309148612931482
+---------------------------------------
+LTShoulderFlexion_deg_
+Output: 0.006713499755043438
+---------------------------------------
+LTShoulderAbduction_deg_
+Output: 0.026702346983429492
+---------------------------------------
+LTElbowFlexion_deg_
+Output: 0.0032915896555591093
+---------------------------------------
+LTWristExtension_deg_
+Output: 0.017910482992331507
+---------------------------------------
+LTWristRadial_deg_
+Output: 0.02385290956803309
+---------------------------------------
+LTWristSupination_deg_
+Output: 0.010860974944532868
+---------------------------------------
+LTHipFlexion_deg_
+Output: -0.0
+---------------------------------------
+LTHipAbduction_deg_
+Output: 0.015304038310589066
+---------------------------------------
+LTHipRotationExt_deg_
+Output: 0.02253744297745217
+---------------------------------------
+LTKneeAbduction_deg_
+Output: 0.11584340824925388
+---------------------------------------
+LTKneeRotationExt_deg_
+Output: 0.014738756448387314
+---------------------------------------
+LTKneeFlexion_deg_
+Output: -0.0
+---------------------------------------
+LTAnkleDorsiflexion_deg_
+Output: 0.009722583343469232
+---------------------------------------
+LTAnkleAbduction_deg_
+Output: 0.01123042404215338
+---------------------------------------
+LTAnkleInversion_deg_
+Output: 0.014267637854858921
+---------------------------------------
+RTShoulderTotalFlexion_deg_
+Output: 0.035628293531786384
+---------------------------------------
+RTShoulderRotationExt_deg_
+Output: 0.0029385886244860985
+---------------------------------------
+RTShoulderFlexion_deg_
+Output: 0.006796379028024395
+---------------------------------------
+RTShoulderAbduction_deg_
+Output: 0.12670581963899805
+---------------------------------------
+RTElbowFlexion_deg_
+Output: 0.0030364547832477046
+---------------------------------------
+RTWristExtension_deg_
+Output: 0.014545120426656554
+---------------------------------------
+RTWristRadial_deg_
+Output: 0.005792213064123479
+---------------------------------------
+RTWristSupination_deg_
+Output: 0.0018859295933039049
+---------------------------------------
+RTHipFlexion_deg_
+Output: -0.0
+---------------------------------------
+RTHipAbduction_deg_
+Output: 0.021067233902946188
+---------------------------------------
+RTHipRotationExt_deg_
+Output: 0.018473127000020018
+---------------------------------------
+RTKneeAbduction_deg_
+Output: 0.02073161085786669
+---------------------------------------
+RTKneeRotationExt_deg_
+Output: 0.009005617722548044
+---------------------------------------
+RTKneeFlexion_deg_
+Output: -0.0
+---------------------------------------
+RTAnkleDorsiflexion_deg_
+Output: 0.010211337562555798
+---------------------------------------
+RTAnkleAbduction_deg_
+Output: 0.021626481827104003
+---------------------------------------
+RTAnkleInversion_deg_
+Output: 0.02806125954572933
+---------------------------------------
