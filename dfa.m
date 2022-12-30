@@ -1,4 +1,4 @@
-function [a, r2, out_a, out_l] = dfa(name)
+function [a, r2, out_a, out_l] = dfa(name, n_min, n_max, n_length, plotOption)
 ts = 'Results/Datas/s1.csv';
 ts = readtable(ts, 'PreserveVariableNames', true);
 ts = table2array(ts);
@@ -10,15 +10,8 @@ dbstop if error
 if size(ts, 1) > size(ts, 2) % ts should be row vector
      ts = ts';
 end
-
-plotOption = 1; % do not produce plot by default
-
-n_length = 18; % default number of points to sample best fit
-
-n_max = length(ts)/9; % n_max as recommended by Damouras, et al., 2010
-
-n_min = 16; % n_min as recommended by Damouras, et al., 2010
-
+n_min = double(n_min);
+n_max = double(n_max);
 n_bp =linspace(log10(n_min), log10(n_max), n_length+1)'; % calculate breakpoints for fit line (spaced evenly in log space)
 
 n = (10:length(ts)/9)'; % calculate F for every possible n (makes plot nice)

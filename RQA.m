@@ -1,14 +1,8 @@
-function [RP, RESULTS]=RQA(tau,dim,name)
-
+function [RP, RESULTS]=RQA(tau,dim,name, NORM, TYPE, ZSCORE, SETPARA, SETVALUE, plotOption)
 %function [RP, RESULTS]=RQA(tau, dim, name)
 dataLoc = 'Results/Datas/s1.csv';
-dataLoc = '/home/pki371_04/shifu/s2.csv';
 name = convertCharsToStrings(name);
-NORM = 'MAX';
-TYPE = 'RQA';
-ZSCORE = 0;
-SETPARA ='recurrence';
-SETVALUE = 2.5;
+SETVALUE = double(SETVALUE);
 
 plotOption = 1;
 DATA = readtable(dataLoc, 'PreserveVariableNames', true);

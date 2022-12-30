@@ -13,8 +13,7 @@ def addLine(name, line):
        f.write("\n")
     f.close()
 
-def runAlgorithm(t1, column, algorithm, param_array):    
-    
+def runAlgorithm(t1, column, algorithm, autoCalc, param_array):     
     # DFA
     if algorithm == 2:
         # Change parameter values from default
@@ -22,214 +21,169 @@ def runAlgorithm(t1, column, algorithm, param_array):
         n_min = 16 # minimum box size 
         n_max = len(t1)/9 # maximum box size
         n_length = 18 # number of points to sample best fit
-        if len(param_array) == 1:
-            n_min = param_array[0]
-        elif len(param_array) == 2:
-            n_min = param_array[0]
-            n_max = param_array[1]
-        elif len(param_array) == 3:
-            n_min = param_array[0]
-            n_max = param_array[1]
-            n_length = param_array[2]
-        elif len(param_array) == 4:
-            n_min = param_array[0]
-            n_max = param_array[1]
-            n_length = param_array[2]
-            plotOption = param_array[3]            
+        if len(param_array) > 1:
+            for i, x in enumerate(param_array):
+                if x != -1:
+                    if i == 0:
+                        n_min = x
+                    elif i == 1:
+                        n_max = x
+                    elif i == 2:
+                        n_length = x
+                    elif i == 3:
+                        plotOption = x           
 
-        runDFA(t1, column)
-    
-    # Ent_Sample
-    elif algorithm == 7: #Code to run Ent_Sample
-        r = getR(t1)
-        dim = param_array[0]
-        if(len(param_array)) == 2:
-            r = param_array[1]
-
-        runEntSamp_M(t1, dim, r, column)
-        # runEnt_Samp(t1, dim, column)
+        runDFA(t1, column,n_min, n_max, n_length, plotOption)
 
     # AMI_Stergio 
     elif algorithm == 3:
         n = 200
         if len(param_array) == 1:
-            n = param_array[0]
-        tau = int(runAMI_Stergio_M(t1, column))
+            if param_array[0] != -1:
+                n = param_array[0]
+        tau = int(runAMI_Stergio_M(t1, column,n))
     
     # FNN
     elif algorithm == 4:
         MaxDim, Rtol, Atol, speed = 10,15,2,0
-        if len(param_array) == 4:
-            MaxDim = param_array[0]
-            Rtol = param_array[1]
-            Atol = param_array[2]
-            speed = param_array[3]
+        if autoCalc:
+            # Change n value Here
+            tau = int(runAMI_Stergio_M(t1, column, 200))
+        else:
+            tau = int(input('Enter tau Value: '))
+        if len(param_array) > 1:
+            for i, x in enumerate(param_array):
+                if x != -1:
+                    if i == 0:
+                        MaxDim = x
+                    elif i == 1:
+                        Rtol = x
+                    elif i == 2:
+                        Atol = x
+                    elif i == 3:
+                        speed = x   
 
-        dim = int(runFNN(t1, column, tau))
+        dim = int(runFNN(t1, column, tau, MaxDim, Rtol, Atol, speed)) 
+    
+    # Ent_Symbolic
+    elif algorithm == 11:
+        x = t1 # 1D binary array of data column
+        x = convertTo1D(t1)
+        l = len(t1) # Word Length
+        if len(param_array) == 1:
+            if param_array[0] != -1:
+                l = param_array[0]
+
+        runEntSymbolic(x,int(l),column)
+    
+    # Ent_xSamp
+    elif algorithm == 12:
+        x = t1 # first data series
+        y = t1 # second data series
+        m = 2 # vector length for matching
+        R = getR(t1) # tolerance for finding matches
+        norm = 1 
+        runEntXSamp(x,y,m,R,norm,column)
     
     else:
-
-        if param_array[0] == 1:
+        if not autoCalc:
+            if algorithm != 8 and algorithm != 7:
+                tau = int(input("Enter tau Value: "))
+            if algorithm != 9:
+                dim = int(input("Enter dim Value: "))
+        else:
             n = 200 # maximal lag
             # tau = runAMIThomas(t1, column)
-            tau = int(runAMI_Stergio_M(t1, column))
-            MaxDim, Rtol, Atol, speed = 10,15,2,0 
-            dim = int(runFNN(t1, column, tau))
+            tau = int(runAMI_Stergio_M(t1, column,200))
+            if algorithm != 9:
+                MaxDim, Rtol, Atol, speed = 10,15,2,0 
+                dim = int(runFNN(t1, column, tau, MaxDim, Rtol, Atol, speed))
             
         # RQA
-        if algorithm == 1:   #Code to run RQA 
+        if algorithm == 1:   #Code to run RQA     
+            norm = 'MAX'
+            type_ = 'RQA'
+            zScore = 0
+            setParameter = 'recurrence'
+            setValue = 2.5
+            plotOption = 1
+            if len(param_array) >= 1:
+                for i, x in enumerate(param_array):
+                    if x != -1 or x != '-1':
+                        if i == 0:
+                            norm = x
+                        elif i == 1:
+                            type_ = x
+                        elif i == 2:
+                            zScore = x
+                        elif i == 3:
+                            setParameter = x
+                        elif i == 4:
+                            setValue = x
+                        elif i == 5:
+                            plotOption = x        
             
-            if len(param_array) == 6:
-                if param_array[0] != 1:
-                    print("Select 1 or give tau and dim values manually")
-                    return
-                zScore = param_array[1]
-                norm = param_array[2]
-                setParam = param_array[3]
-                setValue = param_array[4]
-                plotOption = param_array[5]
-
-            elif len(param_array) == 8:
-                tau = param_array[1]
-                dim = param_array[2]
-                zScore = param_array[3]
-                norm = param_array[4]
-                setParam = param_array[5]
-                setValue = param_array[6]
-                plotOption = param_array[7]
-
-            else:
-                if param_array == 1:
-                    runRQA(t1, tau, dim, column)
-                else:
-                    print("Select 1 or give tau and dim values manually")
-                    return
+            runRQA(t1, tau, dim, column, norm, type_, zScore, setParameter, setValue, plotOption)
             
         # LyE_W
         elif algorithm == 5: #Code to run LyE_W
             sampFrequency = 200
-            evolve = 0.2
-
-            if len(param_array) == 3:
-                if param_array[0] != 1:
-                    print("Select 1 or give tau and dim values manually")
-                    return
-                sampFrequency = param_array[1]
-                evolve = param_array[2]
-            
-            elif len(param_array) == 5:
-                tau = param_array[1]
-                dim = param_array[2]
-                sampFrequency = param_array[3]
-                evolve = param_array[4]
-            
-            else:
-                if param_array[0] == 1:
-                    runLYE_W(t1, column,tau, dim)
-                    # runLyE_W_M(t1, column,tau,dim)
+            evolve = int(0.05*sampFrequency)
+            if len(param_array) >= 1:
+                if param_array[0] != -1:
+                    sampFrequency = param_array[0]
+                if param_array[1] != -1:
+                    evolve = param_array[1]
                 else:
-                    print("Select 1 or give tau and dim values manually")
-                    return
+                    evolve = int(0.05*sampFrequency)
 
+            runLYE_W(t1, column,tau,dim, sampFrequency, evolve)
+            
         # LyE_R
         elif algorithm == 6: #Code to run LyE_R
             sampFrequency = 200
+            if len(param_array) >= 1:
+                if param_array[0] != -1:
+                    sampFrequency = param_array[0]
+    
+            runLYE_R(t1, column, tau, dim, sampFrequency)
 
-            if len(param_array) == 2:
-                sampFrequency = param_array[1]
-            elif len(param_array) == 4:
-                tau = param_array[1]
-                dim = param_array[2]
-                sampFrequency = param_array[3]
-            
-            else:
-                if param_array[0] == 1:
-                    runLyE_R_M(t1, column, tau, dim)
-                else:
-                    print("Select 1 or give tau and dim values manually")
-                    return        
-        
+        # Ent_Sample
+        elif algorithm == 7: #Code to run Ent_Sample
+            r = getR(t1)
+            runEntSamp_M(t1, dim, r, column)
+            # runEnt_Samp(t1, dim, column)
+                   
         # Ent_Ap
         elif algorithm == 8: #Code to run Ent_Ap
             tolerance_r = 0.2
+            if len(param_array) >= 1:
+                if param_array[0] != -1:
+                    tolerance_r = param_array[0]
 
-            if len(param_array) == 3:
-                dim = param_array[1]
-                tolerance_r = param_array[2]
-            elif len(param_array) == 2:
-                if param_array[0] == 1:
-                    tolerance_r = param_array[1]
-                else:
-                    dim = param_array[1]
-            else:
-                if param_array[0] == 1:
-                    runEntAp(t1, dim, tolerance_r, column)
-                else:
-                    print("Change First Parameter to 1 if dim needs to be calculated before analysis")
-                    return
-
+            runEntAp(t1, dim, tolerance_r, column)
+        
         # Ent_MS_Plus
         elif algorithm == 9: #Code to run Ent_MS_Plus
-            
             m = 2 # Length of vectors to be compared
             r = getR(t1) # Radius for accepting matches
-            
-            if len(param_array) == 4:
-                tau = param_array[1]
-                m = param_array[2]
-                r = param_array[3]
-        
-            elif len(param_array) == 3:
-                if param_array[0] == 1:
-                    m = param_array[1]
-                    r = param_array[2]
-                else:
-                    tau = param_array[1]
-                    m = param_array[2]
-            
-            elif param_array[0] != 1:
-                print("Change First Parameter to 1 if dim needs to be calculated before analysis")
-                return
-            
-            elif len(param_array) == 2:
-                m = param_array[1]
-
+            if len(param_array) >= 1:
+                if param_array[0] != -1:
+                    m = param_array[0]
+                if param_array[1] != -1:
+                    r = param_array[1]
             # runEntMSPlus(t1,tau2,m,r,column)
-            runEntMSPlus_M(t1,tau,m,r,column)
+            runEntMSPlus_M(t1,tau,m,r,column)  
 
         # Ent_Permu
         elif algorithm == 10: #Code to run Ent_Permu
-            m = 2 # Length of vectors to be compared
-            tau = 0 # Radius for accepting matches
+            if not autoCalc:
+                if tau == -1:
+                    tau = 0 # Time Delay
+                if dim == -1:
+                    dim = 2 # Embedding Dimension
             
-            if len(param_array) == 3:
-                tau = param_array[1]
-                m = param_array[2]
-            
-            elif param_array[0] != 1:
-                print("Change First Parameter to 1 if dim needs to be calculated before analysis")
-                return
-            
-            elif len(param_array) == 2:
-                m = param_array[1]
-
             runEntPermu(t1, dim, tau, column)
-
-        # Ent_Symbolic
-        elif algorithm == 11:
-            x = t1 # 1D binary array of data column
-            # x = convertTo1D(t1)
-            l = len(t1) # Word Length
-            runEntSymbolic(t1,l,column)
-
-        # Ent_xSamp
-        elif algorithm == 12:
-            x = t1 # first data series
-            y = t1 # second data series
-            m = 2 # vector length for matching
-            R = getR(t1) # tolerance for finding matches
-            norm = 1 
-            runEntXSamp(x,y,m,R,norm,column)
             
 def getStrides(t1,t2):
     aStart = []
@@ -307,7 +261,6 @@ def getStrides(t1,t2):
     df = pd.read_csv(pathF)
     return df
 
-
 def run_analysis(fileLoc):
     print("Choose Number Corresponding to Algorithm"+'\n'
            +"to Analyze Data:"+'\n'
@@ -315,28 +268,98 @@ def run_analysis(fileLoc):
            +"[6. LyE_R] [7. Ent_Sample] [8. Ent_Ap] [9. Ent_MS_Plus] [10. Ent_Permu]"+'\n'
            +"[11. Ent_Symbolic] [12. Ent_xSamp]")
 
-    num = input("Your Choice: ")
-
-    print("Do you want tau and dim values to be calculated or provide the values yourself? Choose (y/n)")
-
-    autoCalc = input("Your Choice: ")
-    while autoCalc != 'y' or autoCalc != 'n':
-        print("Invalid Selection. Try Again.")
+    num = int(input("Your Choice: "))
+    if num != 2 and num != 3 and num != 11 and num != 12:
+        print("Do you want tau and/or dim values to be calculated? Choose (y/n)")
         autoCalc = input("Your Choice: ")
+        while autoCalc != 'y' and autoCalc != 'n':
+            print("Invalid Selection. Try Again.")
+            autoCalc = input("Your Choice: ")
+        
+        if autoCalc == 'y':
+            autoCalc = True
+        elif autoCalc == 'n':
+            autoCalc = False
+    else:
+        autoCalc = False
     
-    if autoCalc == 'y':
-        autoCalc = 1
-    elif autoCalc == 'n':
-        autoCalc = 0
+    if num != 10:
+        print('Use default parameters? Choose (y/n)')
+        dParams = input("Your Choice: ")
+        while dParams != 'y' and dParams != 'n':
+            print("Invalid Selection. Try Again.")
+            dParams = input("Your Choice: ")
+    else:
+        dParams = 'y'
     
+    param_array = []
+    if dParams == 'n':
+        print('Use -1 if you would like to skip one or more parameters')
+        print('--------------------------------------------------------')
 
-    print("Add Parameters for your Algorithm")
-    param_array = list(map(int, input("Enter Parameter: ").split(',')))
+        if num == 1:
+            print('RQA(tau, dim, NORM, TYPE, ZSCORE, SETPARA, SETVALUE, plotOption)')
+            param_array.append(input("NORM: "))
+            param_array.append(input("TYPE: "))
+            param_array.append(int(input("ZSCORE: ")))
+            param_array.append(input("SETPARA: "))
+            param_array.append(float(input("SETVALUE: ")))
+            param_array.append(int(input("plot_Option (0(False)/1(True)): ")))
+        
+        elif num == 2:
+            print('DFA(n_min, n_max, n_length, plotOption)')
+            param_array.append(float(input("n_min, minimum box size: ")))
+            param_array.append(float(input("n_max, maximum box size: ")))
+            param_array.append(int(input("n_length, numbers of points of sample for best fit: ")))
+            param_array.append(int(input("plot_Option, plot log F vs. log n? (0(False)/1(True)): ")))
+        
+        elif num == 3:
+            print('AMI_Stergio(n)')
+            param_array.append(int(input("n, maximal lag: ")))
 
-    
+        elif num == 4:
+            print('FNN(tau, MaxDim, Rtol, Atol, speed)')
+            param_array.append(int(input("MaxDim, Maximum Embedding Dimension: ")))
+            param_array.append(int(input("Rtol, threshold for the first criterion: ")))
+            param_array.append(int(input("Atol, threshold for the second criterion: ")))
+            param_array.append(int(input("speed, pa 0 for the code to calculate to the MaxDim"+'\n'
+                                           + "or a 1 for the code to finish once a minimum is found: ")))
+
+        elif num == 5:
+            print('LyE_W(tau, dim, sample_frequency, evolve)')
+            param_array.append(int(input("sample_frequency: ")))
+            param_array.append(int(input("evolve: ")))
+
+        elif num == 6:
+            print('LyE_R(tau, dim, sampling_frequency)')
+            param_array.append(int(input("sample_frequency: ")))
+
+        elif num == 7:
+            print('Ent_Sample(dim, r)') 
+            param_array.append(float(input("r, radius for accepting matches: ")))
+
+        elif num == 8:
+            print('Ent_Ap(dim, r)') 
+            param_array.append(float(input("tolerance_r: ")))
+
+        elif num == 9:
+            print('Ent_MS_Plus(m,r)')
+            param_array.append(int(input("m, length of vectors to be compared: ")))
+            param_array.append(float(input("r, radius for accepting matches: ")))
+
+        elif num == 11:
+            print('Ent_Symbolic(L)')
+            param_array.append(int(input("L, Word Length: ")))
+
+        elif num == 12:
+            print('Ent_xSamp(m,R,norm)')
+            param_array.append(int(input("m, Vector length for matching: ")))
+            param_array.append(int(input("R: radius for accepting matches")))
+            param_array.append(int(input("norm: ")))
+        
+
     # FileType determines type of file "Parquet" or "CSV"
-    train = getFile(fileLoc)
-    lines = readFiles(fileLoc)
+    train,lines = getFile(fileLoc)
 
     # Loop through columns in the file
     for x in lines:
@@ -350,41 +373,4 @@ def run_analysis(fileLoc):
                 # s = time.time()
                 runAlgorithm(t1, column, num, autoCalc, param_array)
                 # print(time.time()-s)
-                # break
-
-
-    # df = pd.DataFrame(strideDiff)
-    # tau = int(runAMI_Stergio_M(df, column))    
-    # dim = int(runFNN(df, column, tau))
-    
-    # train2 = train['Pelvis Accel Sensor X (mG)']
-    # print(train2.head(5))
-    # train = pd.read_csv('Results/Datas/sine.csv')
-    # t1 = train['Wave']
-    # tau = int(runAMIStergio(t1, 'Wave'))
-    # dim = runFNN(t1, 'Wave', tau)
-    # runLYE_W(t1, 'Wave', tau, dim)
-    
-    # fileLoc = '/home/pki371_04/shifu/s1.csv'
-    # train.to_csv(fileLoc, index=False)
-    # rp, output = eng.RQA(nargout = 2)
-    # print(output)
-    # tS = '/home/pki371_04/shifu/s1.csv'
-    # 
-    # x = rqa.RQA(train, 'RQA', 1, 1, 0, 'euc', None, 'radius', 2.5, 1, 1)
-    # y = lye_E.LyE_R(train,200,13,5,[0,0,0,0],1,1)
-    # print(x)
-    # print(y)
-    # output = ami_stergio.AMI_Stergiou(train, 35)
-    # tau = output[1][1][0]
-    # output = fnn.FNN(train, 28, 10, 15, 2, 0)
-    # print(output[0])
-    # print(output[1])
-    # output = lye_E.LyE_R(train,200,28,5,[0.996539,92914283,0.49280859,0.18828235,0.17224157,0.19505927,0.24233192,0.31718892,0.42754704,0.57112659])
-    # print(output)
-
-
-# def runRQA_Wrong():
-#     train = pd.read_csv('/home/pki371_04/shifu/s2.csv')
-#     x = rqa.RQA(train, 'RQA', 0.99730564, 5, 0, 'max', 2, 'recurrence', 2.5, 1, 1)
-#     print(x)
+                break
