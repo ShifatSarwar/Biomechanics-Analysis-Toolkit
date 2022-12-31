@@ -21,15 +21,30 @@ Your Choice:
 After user makes choice about algorithm they are asked if they would like to calculate tau and dim if chosen algorithm requires them.
 
 ```
-Do you want tau and dim values to be calculated or provide the values yourself? Choose (y/n)
+Do you want tau and dim values to be calculated? Choose (y/n)
 
 Your Choice: 
 ```
-Finally user gives the parameters. If they leave it empty algorithm executes with default parameters.
+Finally user gives the parameters.
+```
+Use default parameters? Choose (y/n)
 
+Your Choice: 
+
+Use -1 if you would like to skip some paramters
+-----------------------------------------------
+RQA(tau, dim, NORM, TYPE, ZSCORE, SETPARA, SETVALUE, plotOption)
+NORM: 
+```
 The results are generated on the Results folder containing .txt files for each algorithms.
 Genered figures can be found inside the Figures folder and the algorithm subfolders with proper names corresponding to the labels.
 
 
 # Change Default Parameters
-Default Parameters are found in driver.py file inside the runAlgorithm method. Each parameter and their description are given as guide. 
+Default Parameters are found in driver.py file inside the runAlgorithm method. Each parameter and their description are given as guide. If you would like to change workings inside algorithm take a look inside function.py and functions_Matlab.py files. 
+
+# Running MATLAB and PYTHON
+
+
+
+
