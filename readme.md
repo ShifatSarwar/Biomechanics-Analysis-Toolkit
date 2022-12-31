@@ -29,7 +29,7 @@ Finally user gives the parameters.
 ```
 Use default parameters? Choose (y/n)
 
-Your Choice: 
+Your Choice: n
 
 Use -1 if you would like to skip some paramters
 -----------------------------------------------
