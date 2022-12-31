@@ -371,6 +371,8 @@ def run_analysis(fileLoc):
                 t1 = getStrides(t1,t2)
             else:
                 # s = time.time()
+                print('Running algorithm on '+ column)
                 runAlgorithm(t1, column, num, autoCalc, param_array)
                 # print(time.time()-s)
+                # Remove break to execute multiple columns in a single run from columns.txt files               
                 break
