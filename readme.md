@@ -44,7 +44,7 @@ Genered figures can be found inside the Figures folder and the algorithm subfold
 Default Parameters are found in driver.py file inside the runAlgorithm method. Each parameter and their description are given as guide. If you would like to change workings inside algorithm take a look inside function.py and functions_Matlab.py files. 
 
 # Running MATLAB and PYTHON
-Following this link will helpd guide installing the MATLAB api for PYTHON: 
+Following this link will helpd guide installing the MATLAB Engine API for PYTHON: 
 <https://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html>
 
 
