@@ -46,7 +46,6 @@ Default Parameters are found in driver.py file inside the runAlgorithm method. E
 # Running MATLAB and PYTHON
 Following this link will helpd guide installing the MATLAB api for PYTHON: 
 <https://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html>
-The other work is already applied in the code to call and use MATLAB functions through PYTHON.
 
 
 
