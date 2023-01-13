@@ -1,0 +1,3 @@
+LT Shank Accel Sensor X (mG)
+LT Shank Accel Sensor Y (mG)
+LT Shank Accel Sensor Z (mG)
