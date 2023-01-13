@@ -1,5 +1,6 @@
 import pandas as pd
 import csv
+import math
 import python_codes.ami_stergio
 import python_codes.ami_thomas
 import python_codes.entPermu
@@ -24,7 +25,7 @@ def getR(t1):
 
 # Depending on the file format fethes the  required time series
 # from the csv/parquet files respectively. 
-def getFile(a):
+def getFile(a, numFiles):
     if a.endswith('.csv'):
         # a = '/home/pki371_04/shifu/S002_G01_D01_B01_T01.csv'
         train = pd.read_csv(a, error_bad_lines=False)
@@ -33,6 +34,15 @@ def getFile(a):
         # a = '/home/pki371_04/shifu/S001_G01_D02_B02_T01.parquet'
         train = pd.read_parquet(a)
         lines = readFiles(0)
+    
+    if numFiles == 2 and a.endswith('.csv'):
+        line1 = readFiles(2)
+        line2 = readFiles(3)
+        lines = [line1,line2]
+    elif numFiles == 2:
+        line1 = readFiles(4)
+        line2 = readFiles(5)
+        lines = [line1,line2]
 
     train = train.iloc[3:]
     train = train.drop(columns=['Activity', 'Marker'])
@@ -42,13 +52,25 @@ def getFile(a):
 # Specify required columns in columns.txt file
 def readFiles(fileType):
     if fileType == 0:
-        with open('columns.txt') as f:
+        with open('ColumnNames/columns.txt') as f:
             lines = f.readlines()
-        return lines
-    else:
-        with open('columnCSV.txt') as f:
+    elif fileType == 1:
+        with open('ColumnNames/columnCSV.txt') as f:
             lines = f.readlines()
-        return lines
+    elif fileType == 2:
+        with open('ColumnNames/columnCSVxSamp1.txt') as f:
+            lines = f.readlines()
+    elif fileType == 3:
+        with open('ColumnNames/columnCSVxSamp2.txt') as f:
+            lines = f.readlines()
+    elif fileType == 4:
+        with open('ColumnNames/columnxSamp1.txt') as f:
+            lines = f.readlines()
+    elif fileType == 5:
+        with open('ColumnNames/columnxSamp2.txt') as f:
+            lines = f.readlines()
+
+    return lines
 
 # Writes the output to each txt file
 def writeToFile(output, column, name):
@@ -198,8 +220,10 @@ def runEntSamp(train, m, r, column):
     output = python_codes.ent_Samp.Ent_Samp(train, m, r)
     writeToFile(output, column, 'SampEnt')
 
-def runEntXSamp(x,y,m,R,norm,column):
+def runEntXSamp(x,y,m,R,norm,column1, column2):
     output = python_codes.ent_xSamp.Ent_xSamp(x,y,m,R,norm)
+    print(output)
+    column = column1 + ' and ' + column2
     writeToFile(output, column, 'Ent_xSamp')
 
 def convertTo1D(train):
@@ -208,3 +232,9 @@ def convertTo1D(train):
         t2.append(bin(x))
     return t2
 
+def getTolerance(t1, t2):
+    stdT1 = t1.std()
+    stdT2 = t2.std()
+    print(stdT1, stdT2)
+    r = stdT2/stdT1
+    return r
