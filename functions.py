@@ -210,9 +210,6 @@ def runEntPermu(train, dim, tau, column):
     writeToFile(output, column, 'EntPermu')
 
 def runEntSymbolic(train, L, column):
-    train = train.to_numpy()
-    # train = pd.get_dummies(train)
-    train = train.tobytes()
     output = python_codes.ent_symbolic.Ent_Symbolic(train,L)
     writeToFile(output, column, 'Ent_Symbolic')
 
@@ -227,9 +224,13 @@ def runEntXSamp(x,y,m,R,norm,column1, column2):
     writeToFile(output, column, 'Ent_xSamp')
 
 def convertTo1D(train):
+    m = train.mean()
     t2 = []
     for x in train:
-        t2.append(bin(x))
+        if x > m:
+            t2.append(1)
+        else:
+            t2.append(0)
     return t2
 
 def getTolerance(t1, t2):

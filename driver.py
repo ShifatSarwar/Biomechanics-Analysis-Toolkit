@@ -69,21 +69,12 @@ def runAlgorithm(t1, column, algorithm, autoCalc, param_array):
     elif algorithm == 11:
         x = t1 # 1D binary array of data column
         x = convertTo1D(t1)
-        l = len(t1) # Word Length
+        l = 1 # Word Length
         if len(param_array) == 1:
             if param_array[0] != -1:
                 l = param_array[0]
 
         runEntSymbolic(x,int(l),column)
-    
-    # Ent_xSamp
-    elif algorithm == 12:
-        x = t1 # first data series
-        y = t1 # second data series
-        m = 2 # vector length for matching
-        R = getR(t1) # tolerance for finding matches
-        norm = 1 
-        runEntXSamp(x,y,m,R,norm,column)
     
     else:
         if not autoCalc:
@@ -357,7 +348,7 @@ def run_analysis(fileLoc):
             param_array.append(float(input("R, radius for accepting matches: ")))
             param_array.append(int(input("norm, 1 for MAX, 2 for Mean/ZScore: ")))
     
-    if num != 11 and num != 12:
+    if num != 12:
 
         # FileType determines type of file "Parquet" or "CSV"
         train,lines = getFile(fileLoc, 1)
@@ -375,36 +366,34 @@ def run_analysis(fileLoc):
                     print('Running algorithm on '+ column)
                     runAlgorithm(t1, column, num, autoCalc, param_array)
                     # print(time.time()-s)
-    else:
-        if num == 11:
-            pass
-        elif num == 12:
-            # FileType determines type of file "Parquet" or "CSV"
-            train,lines = getFile(fileLoc, 2)
-            lines1 = lines[0]
-            lines2 = lines[1]
-            for idx, x in enumerate(lines1):
-                column1 = x.strip('\n')
-                column2 = lines2[idx].strip('\n')
-                if (x!='' and lines2[idx]!=''):
-                    t1 = train[column1]
-                    t2 = train[column2]
-                    print('Running algorithm on '+column1+" and "+column2)
-                    m = 2
-                    r = getTolerance(t1,t2)
-                    norm = 1
-                    if len(param_array) > 1:
-                        for i, x in enumerate(param_array):
-                            if x != -1:
-                                if i == 0:
-                                    m = x
-                                elif i == 1:
-                                    r = x
-                                elif i == 2:
-                                    norm = x
-                    
-                    runEntXSamp(t1, t2, m, r, norm, column1, column2)
-                    
+                    break
+    elif num == 12:
+        # FileType determines type of file "Parquet" or "CSV"
+        train,lines = getFile(fileLoc, 2)
+        lines1 = lines[0]
+        lines2 = lines[1]
+        for idx, x in enumerate(lines1):
+            column1 = x.strip('\n')
+            column2 = lines2[idx].strip('\n')
+            if (x!='' and lines2[idx]!=''):
+                t1 = train[column1]
+                t2 = train[column2]
+                print('Running algorithm on '+column1+" and "+column2)
+                m = 2
+                r = getTolerance(t1,t2)
+                norm = 1
+                if len(param_array) > 1:
+                    for i, x in enumerate(param_array):
+                        if x != -1:
+                            if i == 0:
+                                m = x
+                            elif i == 1:
+                                r = x
+                            elif i == 2:
+                                norm = x
+                
+                runEntXSamp(t1, t2, m, r, norm, column1, column2)
+                break
 
 
             
