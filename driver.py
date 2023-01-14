@@ -366,7 +366,7 @@ def run_analysis(fileLoc):
                     print('Running algorithm on '+ column)
                     runAlgorithm(t1, column, num, autoCalc, param_array)
                     # print(time.time()-s)
-                    break
+                    
     elif num == 12:
         # FileType determines type of file "Parquet" or "CSV"
         train,lines = getFile(fileLoc, 2)
@@ -393,7 +393,7 @@ def run_analysis(fileLoc):
                                 norm = x
                 
                 runEntXSamp(t1, t2, m, r, norm, column1, column2)
-                break
+                
 
 
             
