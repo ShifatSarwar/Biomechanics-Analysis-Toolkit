@@ -47,6 +47,15 @@ Default Parameters are found in driver.py file inside the runAlgorithm method. E
 Following this link will helpd guide installing the MATLAB Engine API for PYTHON: 
 <https://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html>
 
+Step 1: Install MATLAB Application on your device. (Make sure it is activated)
+Step 2: Locate the Matlabroot folder and go to MATLAB/extern/engines/python on Terminal
+You will need sudo access to access the folder on MAC or run the next line on Linux Systems Terminal
+Step 3: 
+```
+python setup.py install
+```
+
+
 
 
 
