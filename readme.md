@@ -52,7 +52,7 @@ Step 1: Install MATLAB Application on your device. (Make sure it is activated)
 Step 2: Locate the Matlabroot folder and go to MATLAB/extern/engines/python on Terminal
 You will need sudo access to access the folder on MAC or run the next line on Linux Systems Terminal
 
-Step 3: 
+Step 3: Run the command below to allow matlab engine working in python 
 ```
 python setup.py install
 ```
