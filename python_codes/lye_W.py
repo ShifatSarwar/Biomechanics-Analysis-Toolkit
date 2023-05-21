@@ -60,6 +60,8 @@ def LyE_W(x, Fs, tau, dim, evolve):
              '<=0'. This was checked against joint angles and EMG data. The
              change did not result in different pairs. This also removes an
             input.
+  May 2023 - Updated for addition in Nonlinear Analysis Toolkit by
+             Shifat Sarwar, ssarwar@unomaha.edu
   """
   
   x = np.array([x])

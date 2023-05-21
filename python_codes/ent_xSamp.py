@@ -20,6 +20,8 @@ def Ent_xSamp(x,y,m,R,norm):
     - Function to calculate cross sample entropy for 2 data series using the
       method described by Richman and Moorman (2000).
     Sep 2015 - Created by John McCamley, unonbcf@unomaha.edu
+    May 2023 - Updated for addition in Nonlinear Analysis Toolkit by
+               Shifat Sarwar, ssarwar@unomaha.edu
     """
     
     # Make sure to have items as numpy arrays

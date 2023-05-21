@@ -51,6 +51,8 @@ def AMI_Stergiou(data, L, to_matlab = False, n_bins = 0):
                 data2.
               - The reexecution part did not have the correct input
                 parameters.
+    May 2023 - Updated for addition in Nonlinear Analysis Toolkit by
+               Shifat Sarwar, ssarwar@unomaha.edu
     Copyright 2020 Nonlinear Analysis Core, Center for Human Movement
     Variability, University of Nebraska at Omaha
     Redistribution and use in source and binary forms, with or without 

@@ -24,6 +24,8 @@ def Ent_Samp(data, m, r):
   Jul 2020 - Modified by Ben Senderling, bmchnonan@unomaha.edu
            - Removed the code that automatically checks for updates and
              keeps a version history.
+  May 2023 - Updated for addition in Nonlinear Analysis Toolkit by
+             Shifat Sarwar, ssarwar@unomaha.edu
   Define r as R times the standard deviation
   """
   R = r * np.std(data)

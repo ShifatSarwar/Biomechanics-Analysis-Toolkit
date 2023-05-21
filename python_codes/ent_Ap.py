@@ -25,6 +25,9 @@ def Ent_Ap(data, dim, r):
     Ver 0 : Aug 4th, 2011
     Ver 1 : Mar 21st, 2012
     ---------------------------------------------------------------------
+    May 2023 - Updated for addition in Nonlinear Analysis Toolkit by
+               Shifat Sarwar, ssarwar@unomaha.edu
+    ---------------------------------------------------------------------
     """
 
 

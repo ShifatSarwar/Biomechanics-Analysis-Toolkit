@@ -26,6 +26,8 @@ def Ent_Permu(data, m, tau):
       37289-permutation-entropy)
     Jun 2016 - Created by Patrick Meng-Frecker, unonbcf@unomaha.edu
     Dec 2016 - Edited by Casey Wiens, email: unonbcf@unomaha.edu
+    May 2023 - Updated for addition in Nonlinear Analysis Toolkit by
+               Shifat Sarwar, ssarwar@unomaha.edu
     """
     def permutation_search(data, m, tau, N):
       permDict = dict()

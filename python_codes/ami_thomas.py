@@ -40,6 +40,8 @@ def AMI_Thomas(x : np.ndarray, L : Union[int,np.ndarray,list]) -> Union[np.ndarr
     Apr 2021 - Modified by Ben Senderling, email bmchnonan@unomaha.edu
              - Modified in conjunction with NONAN validation efforts.
                Added the variable input arguements and second implementation.
+    May 2023 - Updated for addition in Nonlinear Analysis Toolkit by
+               Shifat Sarwar, ssarwar@unomaha.edu
     Validation
     
     Damped oscillator (approximate tau ~ 33)

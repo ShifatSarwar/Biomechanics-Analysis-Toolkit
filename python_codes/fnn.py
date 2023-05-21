@@ -53,6 +53,8 @@ def FNN(data, tau, MaxDim, Rtol, Atol, speed):
              replaced with a single line of code.
            - Removed perviously commented out lines of code that were no
              longer used.
+  May 2023 - Updated for addition in Nonlinear Analysis Toolkit by
+             Shifat Sarwar, ssarwar@unomaha.edu
   """
   n = len(data) - tau * MaxDim
   data_array = np.array(data)

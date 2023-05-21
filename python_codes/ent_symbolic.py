@@ -13,6 +13,8 @@ def Ent_Symbolic(X, L):
       "Complexity analysis of stride interval time series by threshold
       dependent symbolic entropy." Eur. J. Appl. Physiol. 98: 30-40.
     Jun 2017 - Created by William Denton, unonbcf@unomaha.edu
+    May 2023 - Updated for addition in Nonlinear Analysis Toolkit by
+               Shifat Sarwar, ssarwar@unomaha.edu
     Copyright 2020 Nonlinear Analysis Core, Center for Human Movement
     Variability, University of Nebraska at Omaha
     """

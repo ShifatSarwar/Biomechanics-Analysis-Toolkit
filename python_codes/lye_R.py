@@ -73,6 +73,8 @@ def LyE_R(X,Fs,tau,dim,*args):
                  This varies too widely between time series to have it
                  automatically calculated in the script. It was replaced with
                  tau to find paired points.
+      May 2023 - Updated for addition in Nonlinear Analysis Toolkit by
+                 Shifat Sarwar, ssarwar@unomaha.edu
     """
     # Checked that X is vertically oriented. If X is a single or multiple
     # dimentional array the length is assumed to be longer than the width. It

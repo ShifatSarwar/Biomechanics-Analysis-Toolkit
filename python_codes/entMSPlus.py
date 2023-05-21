@@ -29,6 +29,8 @@ def Ent_MS_Plus(x, tau, m, r):
     20201001 Modified by Ben Senderling, bmchnonan@unomaha.edu
              - Modifed to calculate all scales in this single code instead of
                needing to be in an external for loop.
+    May 2023 - Updated for addition in Nonlinear Analysis Toolkit by
+               Shifat Sarwar, ssarwar@unomaha.edu
     """
 
     R = r*np.std(x)
