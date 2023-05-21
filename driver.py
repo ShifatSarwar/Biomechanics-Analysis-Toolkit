@@ -1,19 +1,17 @@
-from functions import *
-from functions_Matlab import *
-import matplotlib.pyplot as plt
-import time
-import pandas as pd
-import numpy as np
-import random
-import time
+from utility_functions import *
+from functions_matlab import *
+from functions_python import *
 
-def addLine(name, line):
-    with open(name, 'a') as f:
-       f.write(line)
-       f.write("\n")
-    f.close()
-
-def runAlgorithm(t1, column, algorithm, autoCalc, param_array):     
+# This is the main code block that determines which tecngnique to use and 
+# calls them for processing. It takes 5 arguments.
+# t1 : time series or data column
+# column : name of the columns like ""
+# algorithm : Number of the user chosen algorithm from options
+# autoCalc : A boolean value that determines if users wants to automatically calculate
+#            tau and dim values or use given values.
+# runPref : running preference either Python or Matlab
+# param_array : An array with all the paramters for running a particular algorithm.
+def runAlgorithm(t1, column, algorithm, autoCalc, runPref, param_array):     
     # DFA
     if algorithm == 2:
         # Change parameter values from default
@@ -21,6 +19,7 @@ def runAlgorithm(t1, column, algorithm, autoCalc, param_array):
         n_min = 16 # minimum box size 
         n_max = len(t1)/9 # maximum box size
         n_length = 18 # number of points to sample best fit
+        # If user given parameters than apply those
         if len(param_array) > 1:
             for i, x in enumerate(param_array):
                 if x != -1:
@@ -32,7 +31,7 @@ def runAlgorithm(t1, column, algorithm, autoCalc, param_array):
                         n_length = x
                     elif i == 3:
                         plotOption = x           
-
+        # Calls the DFA algorithm 
         runDFA(t1, column,n_min, n_max, n_length, plotOption)
 
     # AMI_Stergio 
@@ -41,6 +40,8 @@ def runAlgorithm(t1, column, algorithm, autoCalc, param_array):
         if len(param_array) == 1:
             if param_array[0] != -1:
                 n = param_array[0]
+        if runPref == 1:
+            tau = int(runAMIStergio(t1, column, n))
         tau = int(runAMI_Stergio_M(t1, column,n))
     
     # FNN
@@ -48,7 +49,10 @@ def runAlgorithm(t1, column, algorithm, autoCalc, param_array):
         MaxDim, Rtol, Atol, speed = 10,15,2,0
         if autoCalc:
             # Change n value Here
-            tau = int(runAMI_Stergio_M(t1, column, 200))
+            tau = find_ami_value(column)
+            if tau == None:
+                tau = runAMI_Stergio_M(t1, column, 200)
+            tau = int(tau)
         else:
             tau = int(input('Enter tau Value: '))
         if len(param_array) > 1:
@@ -63,6 +67,8 @@ def runAlgorithm(t1, column, algorithm, autoCalc, param_array):
                     elif i == 3:
                         speed = x   
 
+        if runPref == 2:
+            dim = int(runFNN_M(t1, column, tau, MaxDim, Rtol, Atol, speed))
         dim = int(runFNN(t1, column, tau, MaxDim, Rtol, Atol, speed)) 
     
     # Ent_Symbolic
@@ -73,8 +79,11 @@ def runAlgorithm(t1, column, algorithm, autoCalc, param_array):
         if len(param_array) == 1:
             if param_array[0] != -1:
                 l = param_array[0]
-
+        
+        if runPref == 2:
+            runEntSymbolic_M(x, int(l), column)
         runEntSymbolic(x,int(l),column)
+
     
     else:
         if not autoCalc:
@@ -85,10 +94,17 @@ def runAlgorithm(t1, column, algorithm, autoCalc, param_array):
         else:
             n = 200 # maximal lag
             # tau = runAMIThomas(t1, column)
-            tau = int(runAMI_Stergio_M(t1, column,200))
+            tau = find_ami_value(column)
+            if tau == None:
+                tau = runAMI_Stergio_M(t1, column, 200)
+            tau = int(tau)
             if algorithm != 9:
                 MaxDim, Rtol, Atol, speed = 10,15,2,0 
-                dim = int(runFNN(t1, column, tau, MaxDim, Rtol, Atol, speed))
+                dim = find_dim_value(column)
+                if tau == None:
+                    dim = runFNN(t1, column, tau, MaxDim, Rtol, Atol, speed)
+                dim = int(dim)
+                
             
         # RQA
         if algorithm == 1:   #Code to run RQA     
@@ -113,8 +129,9 @@ def runAlgorithm(t1, column, algorithm, autoCalc, param_array):
                             setValue = x
                         elif i == 5:
                             plotOption = x        
-            
-            runRQA(t1, tau, dim, column, norm, type_, zScore, setParameter, setValue, plotOption)
+            if runPref == 1:
+                runRQA(t1, tau, dim, column, norm, type_, zScore, setParameter, setValue, plotOption)
+            runRQA_M(t1, tau, dim, column, norm, type_, zScore, setParameter, setValue, plotOption)
             
         # LyE_W
         elif algorithm == 5: #Code to run LyE_W
@@ -127,7 +144,9 @@ def runAlgorithm(t1, column, algorithm, autoCalc, param_array):
                     evolve = param_array[1]
                 else:
                     evolve = int(0.05*sampFrequency)
-
+            
+            if runPref == 2:
+                runLyE_W_M(t1, column,tau,dim, sampFrequency, evolve)
             runLYE_W(t1, column,tau,dim, sampFrequency, evolve)
             
         # LyE_R
@@ -136,14 +155,18 @@ def runAlgorithm(t1, column, algorithm, autoCalc, param_array):
             if len(param_array) >= 1:
                 if param_array[0] != -1:
                     sampFrequency = param_array[0]
-    
+            
+            if runPref == 2:
+                runLyE_R_M(t1, column, tau, dim, sampFrequency)
             runLYE_R(t1, column, tau, dim, sampFrequency)
 
         # Ent_Sample
         elif algorithm == 7: #Code to run Ent_Sample
             r = getR(t1)
+
+            if runPref == 1:
+                runEntSamp(t1, dim, r, column)
             runEntSamp_M(t1, dim, r, column)
-            # runEnt_Samp(t1, dim, column)
                    
         # Ent_Ap
         elif algorithm == 8: #Code to run Ent_Ap
@@ -151,7 +174,9 @@ def runAlgorithm(t1, column, algorithm, autoCalc, param_array):
             if len(param_array) >= 1:
                 if param_array[0] != -1:
                     tolerance_r = param_array[0]
-
+            
+            if runPref == 2:
+                runEntAp_M(t1, dim, tolerance_r, column)
             runEntAp(t1, dim, tolerance_r, column)
         
         # Ent_MS_Plus
@@ -163,7 +188,9 @@ def runAlgorithm(t1, column, algorithm, autoCalc, param_array):
                     m = param_array[0]
                 if param_array[1] != -1:
                     r = param_array[1]
-            # runEntMSPlus(t1,tau2,m,r,column)
+            
+            if runPref == 1:
+                runEntMSPlus(t1,tau,m,r,column)
             runEntMSPlus_M(t1,tau,m,r,column)  
 
         # Ent_Permu
@@ -174,84 +201,25 @@ def runAlgorithm(t1, column, algorithm, autoCalc, param_array):
                 if dim == -1:
                     dim = 2 # Embedding Dimension
             
+            if runPref == 2:
+                runEntPermu_M(t1, dim, tau, column)
             runEntPermu(t1, dim, tau, column)
+        
+        # My Algorithm
+        # elif algorithm == 13: #Code to run MyAlgorithm
+        #     if not autoCalc:
+        #         if tau == -1:
+        #             tau = 0 # Time Delay
+        #         if dim == -1:
+        #             dim = 2 # Embedding Dimension
             
-def getStrides(t1,t2):
-    aStart = []
-    sTime = []
-    aEnd = []
-    eTime = []
-    index = 0
-    down = True
-    aStart.append(index)
-    sTime.append(index)
-    for x in t1:
-        if x == 1000.0:
-            if(down):
-                index=index+1
-            else:
-                aStart.append(index)
-                sTime.append(t2[index])
-                down = True
-        elif x == 0.0:
-            if (down):
-                aEnd.append(index-1)
-                eTime.append(t2[index-1])
-                down = False
-            else:
-                index=index+1
-    
-    # index = 0
-    # down = True
-    # a2Start = []
-    # s2Time = [] 
-    # a2End = []
-    # e2Time = []
-    # a2Start.append(index)
-    # s2Time.append(index)
-    # for x in t3:
-    #     if x == 1000.0:
-    #         if(down):
-    #             index=index+1
-    #         else:
-    #             a2Start.append(index)
-    #             s2Time.append(t2[index])
-    #             down = True
-    #     elif x == 0.0:
-    #         if (down):
-    #             a2End.append(index-1)
-    #             e2Time.append(t2[index-1])
-    #             down = False
-    #         else:
-    #             index=index+1
-    divided_a =[]
-    for x in aStart:
-        divided_a.append(x/10.0)
-    
-    strideDiff = []
-    index = 0
-    # # while index < len(aStart):
-    # #     x = sTime[index]-s2Time[index]
-    # #     strideDiff.append(abs(x))
-    # #     index+=1
-    while index < len(aStart)-1:
-        strideDiff.append(divided_a[index+1]-divided_a[index])
-        index+=1
-    pathF = 'Results/Datas/s2.csv'
-    addLine(pathF, column)
-    for x in strideDiff:
-        addLine(pathF, str(x))
-    del sTime[-1]
-    plt.plot(sTime, strideDiff)
-    
-    # giving a title to my graph
-    plt.title(column)
-    plt.savefig(column+'.png')
-    
-    
-    df = pd.read_csv(pathF)
-    return df
+        #     if runPref == 2:
+        #         runMyAlgorithm_M(t1, dim, tau, column)
+        #     runMyAlgorithm(t1, dim, tau, column)
+            
 
+# The main function calls this algorithm to ask the user their choices
+# It only takes the location of the file as input when main.py is called
 def run_analysis(fileLoc):
     print("Choose Number Corresponding to Algorithm"+'\n'
            +"to Analyze Data:"+'\n'
@@ -274,6 +242,10 @@ def run_analysis(fileLoc):
     else:
         autoCalc = False
     
+    if num != 2:
+        print("Do you want to run on the default choice (0) or specifically on python (1) or matlab (2)? Choose (0 , 1 or 2)")
+        algoChoice = int(input("Your Choice: "))
+            
     if num != 10:
         print('Use default parameters? Choose (y/n)')
         dParams = input("Your Choice: ")
@@ -347,6 +319,13 @@ def run_analysis(fileLoc):
             param_array.append(int(input("m, Vector length for matching: ")))
             param_array.append(float(input("R, radius for accepting matches: ")))
             param_array.append(int(input("norm, 1 for MAX, 2 for Mean/ZScore: ")))
+
+        # Add your algorithm call here
+        # elif num == 13:
+            #print('MyAlgorithm(parameters)')
+            # param_array.append(TYPE(input("p, parameter 1: ")))
+            # param_array.append(int(input("m, Vector length: ")))
+
     
     if num != 12:
 
@@ -363,10 +342,12 @@ def run_analysis(fileLoc):
                     t1 = getStrides(t1,t2)
                 else:
                     # s = time.time()
+
                     print('Running algorithm on '+ column)
-                    runAlgorithm(t1, column, num, autoCalc, param_array)
+                    runAlgorithm(t1, column, num, autoCalc, algoChoice, param_array)
                     # print(time.time()-s)
-                    
+
+    # Directly calls xSamp because it takes different input columns than the rest
     elif num == 12:
         # FileType determines type of file "Parquet" or "CSV"
         train,lines = getFile(fileLoc, 2)
@@ -392,6 +373,8 @@ def run_analysis(fileLoc):
                             elif i == 2:
                                 norm = x
                 
+                if algoChoice == 2:
+                    runEntXSamp_M(t1, t2, m, r, norm, column1, column2)
                 runEntXSamp(t1, t2, m, r, norm, column1, column2)
                 
 
