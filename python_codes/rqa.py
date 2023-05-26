@@ -6,7 +6,7 @@ from scipy import stats as st
 from scipy.spatial import distance as spd
 import matplotlib.pyplot as plt
 
-def RQA(DATA,TYPE,EMB,DEL,ZSCORE,NORM,LINELENGTH,SETPARA,SETVALUE,PLOTOPTION,nargout):
+def RQA(DATA,TYPE,EMB,DEL,ZSCORE,NORM,LINELENGTH,SETPARA,SETVALUE,PLOTOPTION, column, nargout):
     """
     Usage: (RP, RESULTS)=RQA20210210(DATA,TYPE,EMB,DEL,ZSCORE,NORM,LINELENGTH,SETPARA,SETVALUE,PLOTOPTION)
     Inputs  - DATA, a double-variable with each dimension of the
@@ -193,7 +193,7 @@ def RQA(DATA,TYPE,EMB,DEL,ZSCORE,NORM,LINELENGTH,SETPARA,SETVALUE,PLOTOPTION,nar
         LINELENGTH = 1
     # If NORM is not specified, set to 'non'
     if NORM == None:
-        NORM = 'non'
+        NORM = 'NON'
     # If ZSCORE is not specified, set to 0
     if ZSCORE == None:
         ZSCORE = 0
@@ -307,20 +307,20 @@ def RQA(DATA,TYPE,EMB,DEL,ZSCORE,NORM,LINELENGTH,SETPARA,SETVALUE,PLOTOPTION,nar
         a = [a[0]]
 
     # Normalize distance matrix
-    if 'euc' in NORM:
+    if 'EUC' in NORM:
         for i in range(len(a)):
             b = np.mean(a[i][np.where(a[i]<0)])
             b = np.negative(np.sqrt(np.abs((b**2)+2*(DIM*EMB))))
             a[i] = a[i]/np.abs(b)
-    elif 'min' in NORM:
+    elif 'MIN' in NORM:
         for i in range(len(a)):
             b = np.max(a[i][np.where(a[i]<0)])
             a[i] = a[i]/np.abs(b)
-    elif 'max' in NORM:
+    elif 'MAX' in NORM:
         for i in range(len(a)):
             b = np.min(a[i][np.where(a[i]<0)])
             a[i] = a[i]/abs(b)
-    elif 'non' in NORM:
+    elif 'NON' in NORM:
         pass # do nothing
     else:
         raise Exception('No appropriate norm parameter specified.')
@@ -438,7 +438,10 @@ def RQA(DATA,TYPE,EMB,DEL,ZSCORE,NORM,LINELENGTH,SETPARA,SETVALUE,PLOTOPTION,nar
         fig.text(.02,.03,"MeanV = {:.2f}".format(RESULTS["MeanV"]))
         fig.text(.02,.0,"EntrV = {:.2f}".format(RESULTS["EntrV"]))
         if PLOTOPTION == 1:
-            plt.show()
+            s1 = 'Figures/RQA/'
+            s2 = '_RQA_1.png'
+            s = s1 + column + s2
+            plt.savefig(s)
     # TODO: Tabs are something that matplotlib does not do by default, if needed this tab feature may be implemented later.
     if PLOTOPTION > 1:
         title = "DIM = {}, EMB = {}, DEL = {}, RAD = {:.5f}, NORM = {}, ZSCORE = {}".format(DIM,EMB,DEL,radius,NORM,ZSCORE)
@@ -471,7 +474,10 @@ def RQA(DATA,TYPE,EMB,DEL,ZSCORE,NORM,LINELENGTH,SETPARA,SETVALUE,PLOTOPTION,nar
             for i in range(r):
                 x_plot.plot(np.arange(DATA.shape[1]),DATA[i,:], 'k-')     
         fig.text(.02,.24,"EntrW = {:.2f}".format(RESULTS["EntrW"]))
-        plt.show()
+        s1 = 'Figures/RQA/'
+        s2 = '_RQA_2.png'
+        s = s1 + column + s2
+        plt.savefig(s)
     return out
 
 

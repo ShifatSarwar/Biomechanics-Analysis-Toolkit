@@ -4,7 +4,7 @@ import numpy.matlib as nmp
 import matplotlib.pyplot as plt
 import sys
 
-def LyE_R(X,Fs,tau,dim,*args):
+def LyE_R(X,name, Fs,tau,dim,*args):
     """
       inputs  - X, If this is a single dimentional array the code will use tau
                    and dim to perform a phase space reconstruction. If this is
@@ -210,7 +210,9 @@ def LyE_R(X,Fs,tau,dim,*args):
             plt.plot(timeL,LyELline,color="green",linewidth=3,label="LyE_Long = {}".format(LyEL))
 
         plt.legend(loc="best")
-        plt.show()
-        plt.savefig('LyE_RFig.png')
+        s1 = 'Figures/LyE_R/'
+        s2 = '_LyE_R.png'
+        s = s1 + name + s2
+        plt.savefig(s)
     
     return output_list
