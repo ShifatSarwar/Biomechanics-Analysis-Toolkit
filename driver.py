@@ -152,13 +152,15 @@ def runAlgorithm(t1, column, algorithm, autoCalc, runPref, param_array):
         # LyE_R
         elif algorithm == 6: #Code to run LyE_R
             sampFrequency = 200
+            plotOption = 1
             if len(param_array) >= 1:
                 if param_array[0] != -1:
                     sampFrequency = param_array[0]
-            
+                if param_array[1] != -1:
+                    plotOption = param_array[1]
             if runPref == 2:
-                runLyE_R_M(t1, column, tau, dim, sampFrequency)
-            runLYE_R(t1, column, tau, dim, sampFrequency)
+                runLyE_R_M(t1, column, tau, dim, sampFrequency, plotOption)
+            runLYE_R(t1, column, tau, dim, sampFrequency, plotOption)
 
         # Ent_Sample
         elif algorithm == 7: #Code to run Ent_Sample
@@ -227,7 +229,14 @@ def run_analysis(fileLoc):
            +"[6. LyE_R] [7. Ent_Sample] [8. Ent_Ap] [9. Ent_MS_Plus] [10. Ent_Permu]"+'\n'
            +"[11. Ent_Symbolic] [12. Ent_xSamp]")
 
-    num = int(input("Your Choice: "))
+    while True:
+        num = input("Enter a number between 1 and 12: ")
+        if num.isdigit():
+            num = int(num)
+            if 1 <= num <= 12:
+                break
+        print("Invalid input. Please enter a number between 1 and 12.")
+
     if num != 2 and num != 3 and num != 11 and num != 12:
         print("Do you want tau and/or dim values to be calculated? Choose (y/n)")
         autoCalc = input("Your Choice: ")
@@ -244,7 +253,16 @@ def run_analysis(fileLoc):
     
     if num != 2:
         print("Do you want to run on the default choice (0) or specifically on python (1) or matlab (2)? Choose (0 , 1 or 2)")
-        algoChoice = int(input("Your Choice: "))
+        while True:
+            algoChoice = int(input("Your Choice: "))
+            if algoChoice in [0, 1, 2]:
+                break
+            else:
+                print("Invalid input. Please enter 0, 1, or 2.")
+        
+        
+    elif num == 2:
+        algoChoice = 0
             
     if num != 10:
         print('Use default parameters? Choose (y/n)')
@@ -294,8 +312,10 @@ def run_analysis(fileLoc):
             param_array.append(int(input("evolve: ")))
 
         elif num == 6:
-            print('LyE_R(tau, dim, sampling_frequency)')
+            print('LyE_R(tau, dim, sampling_frequency, plotOption)')
+            print('Manually change slope and mean period values in functions_python.py/functions_matlab.py run_LyE_R method')
             param_array.append(int(input("sample_frequency: ")))
+            param_array.append(int(input("plotOption: ")))
 
         elif num == 7:
             print('Ent_Sample(dim, r)') 
@@ -331,11 +351,16 @@ def run_analysis(fileLoc):
 
         # FileType determines type of file "Parquet" or "CSV"
         train,lines = getFile(fileLoc, 1)
-
         # Loop through columns in the file
         for x in lines:
             column = x.strip('\n')
             if (x != ''):
+                try:
+                    t1 = train[column]  # Attempt to access the column data
+                # Perform further operations with the column data
+                except KeyError as e:
+                    print(f"Fix Column Name. KeyError occurred for column'{column}': {str(e)}")
+                    continue  # Proceed to the next key
                 t1 = train[column]
                 if (column == 'LT Contact' or column == 'RT Contact'):
                     t2 = train['time']
@@ -357,8 +382,18 @@ def run_analysis(fileLoc):
             column1 = x.strip('\n')
             column2 = lines2[idx].strip('\n')
             if (x!='' and lines2[idx]!=''):
-                t1 = train[column1]
-                t2 = train[column2]
+                try:
+                    t1 = train[column1]  # Attempt to access the column data
+                # Perform further operations with the column data
+                except KeyError as e:
+                    print(f"Fix Column Name. KeyError occurred for column'{column1}': {str(e)}")
+                    continue  # Proceed to the next key
+                try:
+                    t2 = train[column2]  # Attempt to access the column data
+                # Perform further operations with the column data
+                except KeyError as e:
+                    print(f"Fix Column Name. KeyError occurred for column'{column2}': {str(e)}")
+                    continue  # Proceed to the next key
                 print('Running algorithm on '+column1+" and "+column2)
                 m = 2
                 r = getTolerance(t1,t2)

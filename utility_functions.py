@@ -29,6 +29,7 @@ def getFile(a, numFiles):
 
     train = train.iloc[3:]
     train = train.drop(columns=['Activity', 'Marker'])
+    train = train.head(5000)
     return train, lines
 
 # Function that reads the column that needs to be analyzed

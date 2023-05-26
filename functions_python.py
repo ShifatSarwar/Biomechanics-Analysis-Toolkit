@@ -9,11 +9,12 @@ import python_codes.ent_Samp
 import python_codes.entMSPlus
 import python_codes.ent_symbolic
 import python_codes.ent_xSamp
+import python_codes.rqa
 from utility_functions import *
 
 # Function calling and testing AMI_Stergio algorithm
-def runAMIStergio(train, column):
-    output = python_codes.ami_stergio.AMI_Stergiou(train, 200)
+def runAMIStergio(train, column, n):
+    output = python_codes.ami_stergio.AMI_Stergiou(train, n)
     writeToFile(output, column, 'AMI_Stergio')
     if(len(output[0] != 0)):
         return(output[0][0][0])
@@ -30,9 +31,12 @@ def runFNN(train, column, tau, MaxDim, Rtol, Atol, speed):
     return output[1]
 
 # Function calling and testing LyE_R algorithm
-def runLYE_R(train, column, tau, dim, sample_frequency):
+# Manually change slope and Mean Period values
+def runLYE_R(train, column, tau, dim, sample_frequency, plotOption):
+    slope = [0,0,0,0]
+    meanPeriod = 1
     # Add Mean Period Slove Values Here
-    output = python_codes.lye_R.LyE_R(train,sample_frequency,tau,dim,[0,0,0,0],1,1)
+    output = python_codes.lye_R.LyE_R(train, column, sample_frequency,tau,dim,slope,meanPeriod,plotOption)
     writeToFile(output, column, 'LyE_R')
     
 # Function calling and testing LyE_W algorithm
@@ -65,7 +69,13 @@ def runEntXSamp(x,y,m,R,norm,column1, column2):
     column = column1 + ' and ' + column2
     writeToFile(output, column, 'Ent_xSamp')
 
-def runRQA():
-    pass
+def runRQA(train, tau, dim, column, norm, type_, zScore, setParameter, setValue, plotOption):
+    # Change lineLength value here
+    lineLength = None
+    # print('Matlab code contains errors. Fix and uncomment part in functions_matlab to run')
+    rp, output = python_codes.rqa.RQA(train, type_, tau, dim, zScore, norm, lineLength, setParameter, setValue, plotOption, column, 2)
+    outs = [rp, output]
+    writeToFile(outs, column, 'RQA')
+    
 
 

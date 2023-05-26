@@ -81,35 +81,41 @@ def runAMI_Stergio_M(train, column, n):
         return(output[0][0])
 
 # Function calling and using FNN algorithm
-def runFNN_M(train, column, tau):
+def runFNN_M(train, column, tau, MaxDim, Rtol, Atol, speed):
     # Starts the matlab engine that integrates python and matlab
     eng = matlab.engine.start_matlab()
     eng.addpath('matlab_codes')
     createMatLabData(train)
-    output = eng.FNN('Results/Data/s1.csv',tau,10,15,2,0, nargout = 2)
-    # writeToFile(output, column, 'FNN')
+    output = eng.FNN('Results/Data/s1.csv',tau,MaxDim,Rtol,Atol,speed, nargout = 2)
+    writeToFile(output, column, 'FNN')
     eng.quit()
     return output[0]
     
 # Function calling and using LyE_W algorithm
-def runLyE_R_M(train,tau, dim,column, sampling_frequency):
+def runLyE_R_M(train, column, tau, dim, sampling_frequency, plotOption):
+    # Add Mean Period Slove Values Here
+    slope = [0,0,0,0]
+    meanPeriod = 1
     # Starts the matlab engine that integrates python and matlab
     eng = matlab.engine.start_matlab()
     eng.addpath('matlab_codes')
     createMatLabData(train)
     output = eng.LyE_R('Results/Data/s1.csv',sampling_frequency,tau,dim)
+    # Need to fix slope and meanPeriod recieving in MatLab
+    # output = eng.LyE_R('Results/Data/s1.csv',sampling_frequency,tau,dim,slope, meanPeriod, plotOption)
     writeToFile(output, column, 'LyE_R')
     eng.quit()
 
 # Function calling and using LyE_W algorithm
-def runLyE_W_M(train,column,tau,dim):
+def runLyE_W_M(train, column, tau, dim, sampFrequency, evolve):
     # Starts the matlab engine that integrates python and matlab
-    eng = matlab.engine.start_matlab()
-    eng.addpath('matlab_codes')
-    createMatLabData(train)
-    output = eng.LyE_W('Results/Data/s1.csv',200,tau,dim,10)
-    writeToFile(output, column, 'LyE_W')
-    eng.quit()
+    print('Matlab code contains errors. Fix and uncomment part in functions_matlab to run')
+    # eng = matlab.engine.start_matlab()
+    # eng.addpath('matlab_codes')
+    # createMatLabData(train)
+    # output = eng.LyE_W('Results/Data/s1.csv',sampFrequency,tau,dim,evolve)
+    # writeToFile(output, column, 'LyE_W')
+    # eng.quit()
 
 # Function calling and using AMI_Thomas algorithm
 def runAMI_Thomas_M(train, column):
