@@ -74,7 +74,7 @@ function [a, r2, out_a, out_l] = dfa(name, n_min, n_max, n_length, plotOption)
 % LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING 
 % NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS 
 
-ts = 'Results/Datas/s1.csv';
+ts = 'Results/Data/s1.csv';
 ts = readtable(ts, 'PreserveVariableNames', true);
 ts = table2array(ts);
 name = convertCharsToStrings(name);
@@ -88,14 +88,14 @@ end
 n_min = double(n_min);
 n_max = double(n_max);
 n_bp =linspace(log10(n_min), log10(n_max), n_length+1)'; % calculate breakpoints for fit line (spaced evenly in log space)
-
 n = (10:length(ts)/9)'; % calculate F for every possible n (makes plot nice)
 
 F = dfa_fluct(ts, n); % calculate F for every n
 
 [F_fit, n_fit, a, r2, logF_fit] = dfa_fit_average(n, F, n_bp); % fit line over n_fit using averaging method
-
-dfa_plot(n, F, n_fit, F_fit, logF_fit, name); % produce plot of log F vs log n
+if plotOption == 1
+    dfa_plot(n, F, n_fit, F_fit, logF_fit, name); % produce plot of log F vs log n
+end
 string = ['\alpha = ', num2str(a, '%.2f'), newline, 'r^2 = ', num2str(r2, '%.2f')];
 x_lim = get(gca, 'XLim');
 y_lim = get(gca, 'YLim');
@@ -213,13 +213,13 @@ else
     x_lim_new = x_lim(1)*10^y_decades;
     set(hAxObj, 'XLim', [x_lim(1), x_lim_new]);
 end
-axis square
-xlabel('log box size')
-ylabel('log RMS fluctuations')
+
+axis square;
+xlabel('log box size');
+ylabel('log RMS fluctuations');
 s1 = 'Figures/DFA/';
 s2 = '_DFA.png';
 s = strcat(s1,name);
 s = strcat(s,s2);
 saveas(gcf,s);
-
 end

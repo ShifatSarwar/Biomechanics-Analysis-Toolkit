@@ -110,8 +110,8 @@ for i=1:evolve:NPT
         
         % Exclude points too close on path and close in distance
         range_exclude = current_point-10:current_point+10;
-        range_excfunction [out,LyE] = LyE_W(X,Fs,tau,dim,evolve,varargin)
-        range_exclude = range_excfunction [out,LyE]
+        [out,LyE] = LyE_W(X,Fs,tau,dim,evolve,varargin)
+        range_exclude = [out,LyE]
 %% [out,LyE] = LyE_W(X,Fs,tau,dim,evolve)
 % inputs  - X, time series
 %         - Fs, sampling frequency (Hz)

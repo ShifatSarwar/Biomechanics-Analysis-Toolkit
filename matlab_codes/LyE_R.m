@@ -107,6 +107,10 @@ dbstop if error
 % Checked that X is vertically oriented. If X is a single or multiple
 % dimentional array the length is assumed to be longer than the width. It
 % is re-oriented if found to be different.
+
+X = readtable(X, 'PreserveVariableNames', true);
+X = table2array(X);
+
 [r,c]=size(X);
 if c > r
     X=X';
@@ -245,6 +249,12 @@ else
         end
         hold off
         title('LyE'), xlabel('Periods (s)'), ylabel('<ln(divergence)>')
+        % Save the figure
+        s1 = 'Figures/LyE_R/';
+        s2 = '_LyE_R.png';
+        s = strcat(s1, name);
+        s = strcat(s, s2);
+        saveas(gcf, s);
     end
     
 end

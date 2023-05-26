@@ -151,7 +151,7 @@ function [RP, RESULTS]=RQA(tau,dim,name, NORM, TYPE, ZSCORE, SETPARA, SETVALUE, 
 % SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-dataLoc = 'Results/Datas/s1.csv';
+dataLoc = 'Results/Data/s1.csv';
 name = convertCharsToStrings(name);
 SETVALUE = double(SETVALUE);
 
