@@ -29,7 +29,6 @@ def getFile(a, numFiles):
 
     train = train.iloc[3:]
     train = train.drop(columns=['Activity', 'Marker'])
-    train = train.head(5000)
     return train, lines
 
 # Function that reads the column that needs to be analyzed
@@ -97,11 +96,16 @@ def writeToFile(output, column, name):
             s = 'ApEn: ' + str(output)
             f.write(s)
         elif (name == 'EntPermu'):
-            s = 'permEnt: ' + str(output[0])
-            f.write(s)
-            f.write('\n')
-            s = 'histogram: '+ str(output[1])
-            f.write(s)
+            if isinstance(output, list) and len(output) > 0:
+                s = 'permEnt: ' + str(output[0])
+                f.write(s)
+                f.write('\n')
+                s = 'histogram: '+ str(output[1])
+                f.write(s)
+            else:
+                s = 'permEnt: ' + str(output)
+                f.write(s)
+            
         elif (name == 'SampEnt'):
             s = 'Output: ' + str(output)
             f.write(s)
@@ -172,6 +176,10 @@ def convertTo1D(train):
 def createMatLabData(train):
 #   train = train.head(10)
     train.to_csv('Results/Data/s1.csv', index = False)
+
+def createMatLabData2(train):
+#   train = train.head(10)
+    train.to_csv('Results/Data/s2.csv', index = False)
 
 # Calculates a tolerance value using a basic formulae
 def getTolerance(t1, t2):

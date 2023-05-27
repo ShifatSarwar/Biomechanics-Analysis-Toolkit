@@ -48,9 +48,11 @@ def runEntAp(train, dim, r, column):
     output = python_codes.ent_Ap.Ent_Ap(train,dim,r)
     writeToFile(output, column, 'Ent_Ap')
 
+
 def runEntMSPlus(train, tau, m, r, column):
-    output = python_codes.entMSPlus.Ent_MS_Plus(train,tau,m,r)
-    writeToFile(output, column, 'Ent_MS_Plus')
+    print('Python code contains errors. Fix and uncomment part in functions_python to run')
+    # output = python_codes.entMSPlus.Ent_MS_Plus(train,tau,m,r)
+    # writeToFile(output, column, 'Ent_MS_Plus')
 
 def runEntPermu(train, dim, tau, column):
     output = python_codes.entPermu.Ent_Permu(train,dim,tau)

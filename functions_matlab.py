@@ -18,14 +18,16 @@ def runEntSamp_M(train, m, r, column):
     createMatLabData(train)
     r = matlab.double(r)
     output = eng.Ent_Samp(column,m, r)
-    # print(output)
-    writeToFile(output, column, 'Ent_Samp')
+    writeToFile(output, column, 'SampEnt')
     eng.quit()
 
-def runEntAp_M(train):
+def runEntAp_M(train, m, r, column):
     eng = matlab.engine.start_matlab()
     eng.addpath('matlab_codes')
     createMatLabData(train)
+    r = matlab.double(r)
+    output = eng.Ent_Ap(column,m, r)
+    writeToFile(output, column, 'Ent_Ap')
     eng.quit()
 
 def runEntMSPlus_M(train,tau,m,r,column):
@@ -38,22 +40,32 @@ def runEntMSPlus_M(train,tau,m,r,column):
     writeToFile(output, column, 'Ent_MS_Plus')
     eng.quit()
 
-def runEntPermu_M(train):
+def runEntPermu_M(train, dim, tau, column):
     eng = matlab.engine.start_matlab()
     eng.addpath('matlab_codes')
     createMatLabData(train)
+    output = eng.Ent_Permu(dim,tau)
+    writeToFile(output, column, 'EntPermu')
     eng.quit()
 
-def runEntSymbolic_M(train):
+def runEntSymbolic_M(train, L, column):
+    print('Matlab code contains errors. Fix and uncomment part in functions_matlab to run')
+    # eng = matlab.engine.start_matlab()
+    # eng.addpath('matlab_codes')
+    # output = eng.Ent_Symbolic(train, L)
+    # writeToFile(output, column, 'Ent_Symbolic')
+    # eng.quit()
+    
+    
+def runEntXSamp_M(x,y,m,R,norm,column1, column2):
     eng = matlab.engine.start_matlab()
     eng.addpath('matlab_codes')
-    createMatLabData(train)
-    eng.quit()
-
-def runEntXSamp_M(train):
-    eng = matlab.engine.start_matlab()
-    eng.addpath('matlab_codes')
-    createMatLabData(train)
+    createMatLabData(x)
+    createMatLabData2(y)
+    r = matlab.double(R)
+    output = eng.Ent_xSamp(m,r,norm)
+    column = column1 + ' and ' + column2
+    writeToFile(output, column, 'Ent_xSamp')
     eng.quit()
 
 def runRQA_M(train, tau, dim, column, norm, type_, zScore, setParameter, setValue, plotOption):
