@@ -25,6 +25,12 @@ Do you want tau and dim values to be calculated? Choose (y/n)
 
 Your Choice: 
 ```
+User gets an additional choice to choose if they want to run the algorithm in Python(1) or MatLab(2). A default choice(0) is also avialble that represesnts the most up to date and properly tested algorithms from Python or MatLab. 
+```
+Do you want to run on the default choice (0) or specifically on python (1) or matlab (2)? Choose (0 , 1 or 2)
+
+Your Choice: 
+```
 Finally user gives the parameters.
 ```
 Use default parameters? Choose (y/n)
