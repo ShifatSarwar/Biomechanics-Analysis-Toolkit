@@ -1,4 +1,6 @@
-function [AE] = Ent_Ap( data, dim, r )
+function [AE] = Ent_Ap(data, dim, r )
+data = 'Results/Data/s1.csv';
+% name = convertCharsToStrings(name);
 data = readtable(data, 'PreserveVariableNames', true);
 data = table2array(data);
 %Ent_Ap20120321
@@ -45,5 +47,5 @@ for j = 1:2
     end
     phim(j) = sum(log(phi))/(N-m+1);
 end
-AE = phim(1)-phim(2)
+AE = phim(1)-phim(2);
 end

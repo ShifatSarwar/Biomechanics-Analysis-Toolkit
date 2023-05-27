@@ -1,6 +1,6 @@
 
 function SE = Ent_Samp(name,m,R)
-dataLoc = 'Results/Datas/s1.csv';
+dataLoc = 'Results/Data/s1.csv';
 name = convertCharsToStrings(name);
 DATA = readtable(dataLoc, 'PreserveVariableNames', true);
 data = table2array(DATA);

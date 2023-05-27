@@ -1,4 +1,10 @@
-function xSE = Ent_xSamp(x,y,m,R,norm)
+function xSE = Ent_xSamp(m,R,norm)
+data = 'Results/Data/s1.csv';
+DATA = readtable(data, 'PreserveVariableNames', true);
+x = table2array(DATA);
+data= 'Results/Data/s2.csv';
+DATA = readtable(data, 'PreserveVariableNames', true);
+y = table2array(DATA);
 % xSE = Ent_xSamp20180320(x,y,m,R,norm)
 % Inputs - x, first data series
 %        - y, second data series
@@ -56,34 +62,38 @@ if xl ~= yl
     disp('The data series need to be the same length!')
 end
 N = length(x);
-% normalize the data ensure data fits in the same "space"
-if norm == 1 %normalize data to have a range 0 - 1
+% normalize the data to ensure data fits in the same "space"
+if norm == 1 % normalize data to have a range 0 - 1
     xn = (x - min(x))/(max(x) - min(x));
     yn = (y - min(y))/(max(y) - min(y));
-    r = R * ((std(xn)+std(yn))/2);
-elseif norm == 2 % normalize data to have a SD = 1, and mean = 0
+    r = R * ((std(xn) + std(yn))/2);
+elseif norm == 2 % normalize data to have SD = 1 and mean = 0
     xn = (x - mean(x))/std(x);
     yn = (y - mean(y))/std(y);
     r = R;
-else disp('These data will not be normalized')
+else
+    disp('These data will not be normalized')
 end
 
-for i = 1:N-m
-    for k = 1:m+1
-        dij(:,k) = abs(xn(1+k-1:N-m+k-1)-yn(i+k-1));
+Bm = zeros(N - m, 1);
+Am = zeros(N - m, 1);
+
+for i = 1:N - m
+    for k = 1:m + 1
+        dij(:, k) = abs(xn(1 + k - 1 : N - m + k - 1) - yn(i + k - 1));
     end
-    dj = max(dij(:,1:m),[],2);
-    dj1 = max(dij,[],2);
-    d = find(dj<=r);
-    d1 = find(dj1<=r);
+    dj = max(dij(:, 1:m), [], 2);
+    dj1 = max(dij, [], 2);
+    d = find(dj <= r);
+    d1 = find(dj1 <= r);
     nm = length(d);
-    Bm(i) = nm/(N-m);
+    Bm(i) = nm / (N - m);
     nm1 = length(d1);
-    Am(i) = nm1/(N-m);
+    Am(i) = nm1 / (N - m);
 end
 
-Bmr = sum(Bm)/(N-m);
-Amr = sum(Am)/(N-m);
+Bmr = sum(Bm) / (N - m);
+Amr = sum(Am) / (N - m);
 
-xSE = -log(Amr/Bmr);
+xSE = -log(double(Amr) / double(Bmr));
 end

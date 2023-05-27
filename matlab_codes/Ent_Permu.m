@@ -1,4 +1,4 @@
-function [permEnt, hist] = Ent_Permu(data, m, tau)
+function [permEnt, hist] = Ent_Permu(m, tau)
 % [permEnt, hist] = Ent_Permu20180320(data, m, tau)
 % inputs -  data: 1-D array of data being analyzed
 %           m: embedding dimension (order of permutation entropy) 
@@ -55,21 +55,23 @@ function [permEnt, hist] = Ent_Permu(data, m, tau)
 % NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS 
 % SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 %%
+data = 'Results/Data/s1.csv';
 data = readtable(data, 'PreserveVariableNames', true);
 data = table2array(data); 
 N = length(data);  % length of time series
 perm = perms(1:m);  % create all possible permutation vectors
 hist(1:length(perm)) = 0;   % designate variable to store values
 
-for cnt1=1:N-tau*(m-1)  % steps from 1 through length of data minus time delay multiplied by order minus 1
+for cnt1 = 1:N - tau * (m - 1)  % steps from 1 through length of data minus time delay multiplied by order minus 1
     [~, permVal] = sort(data(cnt1:tau:cnt1+tau*(m-1))); % creates permutation of selected data range
-    for cnt2=1:length(perm) % steps through length of possible permutation vectors
-        if perm(cnt2,:) - permVal == 0  % compares current permutation of selected data to possible permutation vectors
+    for cnt2 = 1:length(perm) % steps through length of possible permutation vectors
+        if isequal(perm(cnt2, :), permVal) % compares current permutation of selected data to possible permutation vectors
             hist(cnt2) = hist(cnt2) + 1;    % if above comparison is equal, then adds one to bin for appropriate permutation vector
         end
     end
 end
 
 histNew = hist(hist ~= 0);  % remove any permutation orders with 0 for proper calculation
-per = histNew/sum(histNew);	% ratio of each permutation vector match to total matches
-permEnt = -sum(per .* log2(per));   % performs entropy calucation
+per = histNew / sum(histNew);    % ratio of each permutation vector match to total matches
+permEnt = -sum(per .* log2(per));   % performs entropy calculation
+end

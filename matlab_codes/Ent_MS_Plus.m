@@ -1,5 +1,5 @@
 function [ RCMSE, CMSE, MSE, MSFE, GMSE ] = Ent_MS_Plus(name,tau, m, r )
-dataLoc = 'Results/Datas/s1.csv';
+dataLoc = 'Results/Data/s1.csv';
 name = convertCharsToStrings(name);
 DATA = readtable(dataLoc, 'PreserveVariableNames', true);
 x = table2array(DATA);

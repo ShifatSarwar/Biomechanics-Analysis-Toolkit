@@ -1,4 +1,4 @@
-function [ NCSE ] = Ent_Symbolic( X, L )
+function [NCSE] = Ent_Symbolic(X,L)
 % [ SymEnt ] = Ent_Symbolic20180320( X, L )
 % symbolicEnt Calculates the Symbolic Entropy for given data.
 % Input -   X: 1-Dimensional binary array of data
